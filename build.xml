@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation" parallel="tests" thread-count="1">
+
+    <test name="test_login_response_time">
+
+        <parameter name="nvProfile" value="4G-Lossy" />
+        <parameter name="captureLevel" value="Application" /> <!--Accepted Values: 'Device' or 'Application' -->
+        <parameter name="QA_Release_Cycle" value="10.2" /> <!-- Just a random value to emphasize how we can parameterize variables for easier report filtering -->
+
+        <parameter name="deviceQuery" value="@serialnumber='00008020-001C61863CE9002E'" />
+
+        <classes>
+            <class name="tests.E2E_Flow"/>
+        </classes>
+    </test>
+
+<!--    <test name="test_exception_handling">-->
+
+<!--        <parameter name="deviceQuery" value="@serialnumber='00008020-001C61863CE9002E'" />-->
+
+<!--        <classes>-->
+<!--            <class name="tests.ExceptionHandling"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
