@@ -52,7 +52,6 @@ public class ExceptionHandling {
 
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
-
         try {
             if (result.isSuccess()) {
                 driver.executeScript("seetest:client.setReportStatus(\"Passed\",\"Test Passed\")");
@@ -61,11 +60,11 @@ public class ExceptionHandling {
                 helper.addPropertyForReporting("failure_cause", cause[0]);
                 helper.setReportStatus("Failed", result.getThrowable().getMessage());
             }
-
-            driver.quit();
         } catch (Exception e) {
-            driver.quit();
+            System.out.println("Could not pass relevant test information in TearDown. Ending session gracefully.");
         }
+
+        driver.quit();
 
     }
 

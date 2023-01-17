@@ -1,27 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Automation" parallel="tests" thread-count="1">
+<suite name="Test Automation" parallel="tests" thread-count="4">
 
-    <test name="test_login_response_time">
+    <test name="Test_E2E_01">
 
-        <parameter name="nvProfile" value="4G-Lossy" />
+        <parameter name="nvProfile" value="3G-average" />
         <parameter name="captureLevel" value="Application" /> <!--Accepted Values: 'Device' or 'Application' -->
         <parameter name="QA_Release_Cycle" value="10.2" /> <!-- Just a random value to emphasize how we can parameterize variables for easier report filtering -->
 
-        <parameter name="deviceQuery" value="@serialnumber='00008020-001C61863CE9002E'" />
+        <parameter name="deviceQuery" value="@os='ios' and contains(@name, 'XR')" />
 
         <classes>
             <class name="tests.E2E_Flow"/>
         </classes>
     </test>
 
-<!--    <test name="test_exception_handling">-->
+    <test name="Test_E2E_02">
 
-<!--        <parameter name="deviceQuery" value="@serialnumber='00008020-001C61863CE9002E'" />-->
+        <parameter name="nvProfile" value="4G-bad-connection" />
+        <parameter name="captureLevel" value="Application" />
+        <parameter name="QA_Release_Cycle" value="10.2" />
 
-<!--        <classes>-->
-<!--            <class name="tests.ExceptionHandling"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+        <parameter name="deviceQuery" value="@os='ios' and contains(@name, 'XR')" />
+
+        <classes>
+            <class name="tests.E2E_Flow"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_03">
+
+        <parameter name="nvProfile" value="3G-average" />
+        <parameter name="captureLevel" value="Device" />
+        <parameter name="QA_Release_Cycle" value="10.2" />
+
+        <parameter name="deviceQuery" value="@os='ios' and contains(@name, 'XR')" />
+
+        <classes>
+            <class name="tests.E2E_Flow"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_04">
+
+        <parameter name="nvProfile" value="4G-bad-connection" />
+        <parameter name="captureLevel" value="Device" />
+        <parameter name="QA_Release_Cycle" value="10.2" />
+
+        <parameter name="deviceQuery" value="@os='ios' and contains(@name, 'XR')" />
+
+        <classes>
+            <class name="tests.E2E_Flow"/>
+        </classes>
+    </test>
+
+    <!--    <test name="test_exception_handling">-->
+
+    <!--        <parameter name="deviceQuery" value="@serialnumber='00008020-001C61863CE9002E'" />-->
+
+    <!--        <classes>-->
+    <!--            <class name="tests.ExceptionHandling"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
 </suite>

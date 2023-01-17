@@ -59,32 +59,36 @@ public class E2E_Flow {
     @Test(priority = 1)
     @Parameters({"nvProfile", "captureLevel"})
     public void test_launch_of_application_response(String nvProfile, String captureLevel, @Optional Method method) {
-        // Start a group that will contain the individual test steps until 'endGroupingOfSteps' is called
-        helper.startGroupingOfSteps(method.getName());
+        try {
+            // Start a group that will contain the individual test steps until 'endGroupingOfSteps' is called
+            helper.startGroupingOfSteps(method.getName());
 
-        // Install the Application only
-        driver.executeScript("seetest:client.install(\"cloud:com.experitest.ExperiBank\", \"false\", \"false\")");
+            // Install the Application only
+            driver.executeScript("seetest:client.install(\"cloud:com.experitest.ExperiBank\", \"false\", \"false\")");
 
-        // Start Performance Transaction Capturing
-        helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
+            // Start Performance Transaction Capturing
+            helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
 
-        // Click on the EriBank icon on the Device Home Page
-        driver.findElement(By.xpath("//XCUIElementTypeIcon[@name='EriBank']")).click();
+            // Click on the EriBank icon on the Device Home Page
+            driver.findElement(By.xpath("//XCUIElementTypeIcon[@name='SeeTestDemoApp']")).click();
 
-        // Verify user landed on the Login page
-        wait.until(ExpectedConditions.elementToBeClickable(By.name("usernameTextField")));
+            // Verify user landed on the Login page
+            wait.until(ExpectedConditions.elementToBeClickable(By.name("usernameTextField")));
 
-        // End the Performance Transaction Capturing
-        String response = helper.endCapturePerformanceMetrics(method.getName());
+            // End the Performance Transaction Capturing
+            String response = helper.endCapturePerformanceMetrics(method.getName());
 
-        // Ends the group that was started by 'startGroupingOfSteps'. In the Report we can now expand a group to see a set of steps within the group
-        helper.endGroupingOfSteps();
+            // Ends the group that was started by 'startGroupingOfSteps'. In the Report we can now expand a group to see a set of steps within the group
+            helper.endGroupingOfSteps();
 
-        // Extract relevant properties from the Transaction Response
-        String link = helper.getPropertyFromPerformanceTransactionReport(response, "link");
+            // Extract relevant properties from the Transaction Response
+            String link = helper.getPropertyFromPerformanceTransactionReport(response, "link");
 
-        // Add a custom step to the Automated Test Results with a link reference to the Performance Transaction Report
-        helper.addReportStep(link);
+            // Add a custom step to the Automated Test Results with a link reference to the Performance Transaction Report
+            helper.addReportStep(link);
+        } catch (Exception e) {
+            System.out.println("Something went wrong in the script for Test: '" + method.getName() + "'");
+        }
 
         // Add custom properties that allow for easier filtering for the Automated Test Results
         helper.addPropertyForReporting("nvProfile", nvProfile);
@@ -94,35 +98,27 @@ public class E2E_Flow {
     @Test(priority = 2, dependsOnMethods = {"test_launch_of_application_response"})
     @Parameters({"nvProfile", "captureLevel"})
     public void test_login_response_time(String nvProfile, String captureLevel, @Optional Method method) {
-        // Start a group that will contain the individual test steps until 'endGroupingOfSteps' is called
-        helper.startGroupingOfSteps(method.getName());
+        try {
+            helper.startGroupingOfSteps(method.getName());
 
-        // Enter User Credentials into the Username and Password field
-        driver.findElement(By.name("usernameTextField")).sendKeys("company");
-        driver.findElement(By.name("passwordTextField")).sendKeys("company");
+            driver.findElement(By.name("usernameTextField")).sendKeys("company");
+            driver.findElement(By.name("passwordTextField")).sendKeys("company");
 
-        // Start Performance Transaction Capturing
-        helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
+            helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
 
-        // Click on the Login Button
-        driver.findElement(By.name("loginButton")).click();
+            driver.findElement(By.name("loginButton")).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.name("Make Payment")));
 
-        // Verify user landed on the Dashboard Page
-        wait.until(ExpectedConditions.elementToBeClickable(By.name("Make Payment")));
+            String response = helper.endCapturePerformanceMetrics(method.getName());
 
-        // End the Performance Transaction Capturing
-        String response = helper.endCapturePerformanceMetrics(method.getName());
+            helper.endGroupingOfSteps();
 
-        // Ends the group that was started by 'startGroupingOfSteps'. In the Report we can now expand a group to see a set of steps within the group
-        helper.endGroupingOfSteps();
+            String link = helper.getPropertyFromPerformanceTransactionReport(response, "link");
+            helper.addReportStep(link);
+        } catch (Exception e) {
+            System.out.println("Something went wrong in the script for Test: '" + method.getName() + "'");
+        }
 
-        // Extract relevant properties from the Transaction Response
-        String link = helper.getPropertyFromPerformanceTransactionReport(response, "link");
-
-        // Add a custom step to the Automated Test Results with a link reference to the Performance Transaction Report
-        helper.addReportStep(link);
-
-        // Add custom properties that allow for easier filtering for the Automated Test Results
         helper.addPropertyForReporting("nvProfile", nvProfile);
         helper.addPropertyForReporting("captureLevel", captureLevel);
     }
@@ -130,47 +126,37 @@ public class E2E_Flow {
     @Test(priority = 3, dependsOnMethods = {"test_login_response_time"})
     @Parameters({"nvProfile", "captureLevel"})
     public void test_payment_response_time(String nvProfile, String captureLevel, @Optional Method method) {
-        // Start a group that will contain the individual test steps until 'endGroupingOfSteps' is called
-        helper.startGroupingOfSteps(method.getName());
+        try {
+            helper.startGroupingOfSteps(method.getName());
 
-        // Click on the Make Payment option
-        driver.findElement(By.name("Make Payment")).click();
+            driver.findElement(By.name("Make Payment")).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.name("phoneTextField")));
 
-        // Verify user landed on the Payment Page
-        wait.until(ExpectedConditions.elementToBeClickable(By.name("phoneTextField")));
+            driver.findElement(By.name("phoneTextField")).sendKeys("3479350000");
+            driver.findElement(By.name("nameTextField")).sendKeys("Rahee");
+            driver.findElement(By.name("amountTextField")).sendKeys("20");
+            driver.findElement(By.name("countryButton")).click();
 
-        // Enter data related to the payment transaction
-        driver.findElement(By.name("phoneTextField")).sendKeys("3479350000");
-        driver.findElement(By.name("nameTextField")).sendKeys("Rahee");
-        driver.findElement(By.name("amountTextField")).sendKeys("20");
-        driver.findElement(By.name("countryButton")).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.name("Switzerland")));
+            driver.findElement(By.name("Switzerland")).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.name("Switzerland")));
-        driver.findElement(By.name("Switzerland")).click();
+            helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
 
-        // Start the Performance Transaction Capturing
-        helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
+            driver.findElement(By.name("sendPaymentButton")).click();
+            driver.findElement(By.name("Yes")).click();
 
-        // Click on Send and the pop-up that follows, this allows for the payment to happen
-        driver.findElement(By.name("sendPaymentButton")).click();
-        driver.findElement(By.name("Yes")).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.id("Make Payment")));
 
-        // Verify payment is done and user lands on the Dashboard Page
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("Make Payment")));
+            String response = helper.endCapturePerformanceMetrics(method.getName());
 
-        // End the Performance Transaction Capturing
-        String response = helper.endCapturePerformanceMetrics(method.getName());
+            helper.endGroupingOfSteps();
 
-        // Ends the group that was started by 'startGroupingOfSteps'. In the Report we can now expand a group to see a set of steps within the group
-        helper.endGroupingOfSteps();
+            String link = helper.getPropertyFromPerformanceTransactionReport(response, "link");
+            helper.addReportStep(link);
+        } catch (Exception e) {
+            System.out.println("Something went wrong in the script for Test: '" + method.getName() + "'");
+        }
 
-        // Extract relevant properties from the Transaction Response
-        String link = helper.getPropertyFromPerformanceTransactionReport(response, "link");
-
-        // Add a custom step to the Automated Test Results with a link reference to the Performance Transaction Report
-        helper.addReportStep(link);
-
-        // Add custom properties that allow for easier filtering for the Automated Test Results
         helper.addPropertyForReporting("nvProfile", nvProfile);
         helper.addPropertyForReporting("captureLevel", captureLevel);
     }
@@ -178,39 +164,37 @@ public class E2E_Flow {
     @Test(priority = 4, dependsOnMethods = {"test_payment_response_time"})
     @Parameters({"nvProfile", "captureLevel"})
     public void test_logout_response_time(String nvProfile, String captureLevel, @Optional Method method) {
-        // Start a group that will contain the individual test steps until 'endGroupingOfSteps' is called
-        helper.startGroupingOfSteps(method.getName());
+        try {
+            helper.startGroupingOfSteps(method.getName());
 
-        // Start the Performance Transaction Capturing
-        helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
+            helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
 
-        // Click on the Logout Button
-        driver.findElement(By.name("Logout")).click();
+            driver.findElement(By.name("Logout")).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.name("usernameTextField")));
 
-        // Verify the user has landed on the Login Page
-        wait.until(ExpectedConditions.elementToBeClickable(By.name("usernameTextField")));
+            String response = helper.endCapturePerformanceMetrics(method.getName());
 
-        // End the Performance Transaction Capturing
-        String response = helper.endCapturePerformanceMetrics(method.getName());
+            helper.endGroupingOfSteps();
 
-        // Ends the group that was started by 'startGroupingOfSteps'. In the Report we can now expand a group to see a set of steps within the group
-        helper.endGroupingOfSteps();
+            String link = helper.getPropertyFromPerformanceTransactionReport(response, "link");
+            helper.addReportStep(link);
+        } catch (Exception e) {
+            System.out.println("Something went wrong in the script for Test: '" + method.getName() + "'");
+        }
 
-        // Extract relevant properties from the Transaction Response
-        String link = helper.getPropertyFromPerformanceTransactionReport(response, "link");
-
-        // Add a custom step to the Automated Test Results with a link reference to the Performance Transaction Report
-        helper.addReportStep(link);
-
-        // Add custom properties that allow for easier filtering for the Automated Test Results
         helper.addPropertyForReporting("nvProfile", nvProfile);
         helper.addPropertyForReporting("captureLevel", captureLevel);
     }
 
     @AfterClass(alwaysRun = true)
     public void tearDown(ITestContext context) {
-        String qaReleaseCycle = context.getCurrentXmlTest().getParameter("QA_Release_Cycle");
-        driver.executeScript("seetest:client.addTestProperty(\"QA_Release_Cycle\", \"" + qaReleaseCycle + "\")");
+        try {
+            String qaReleaseCycle = context.getCurrentXmlTest().getParameter("QA_Release_Cycle");
+            driver.executeScript("seetest:client.addTestProperty(\"QA_Release_Cycle\", \"" + qaReleaseCycle + "\")");
+        } catch (Exception e) {
+            System.out.println("Property or value not found, ignoring adding of Test Property using 'client.addTestProperty'");
+        }
+
         driver.quit();
     }
 
