@@ -36,7 +36,7 @@ public class ExceptionHandling {
         desiredCapabilities.setCapability("autoAcceptAlerts", true);
 
         driver = new IOSDriver<>(new URL(new PropertiesReader().getProperty("cloudUrl")), desiredCapabilities);
-        wait = new WebDriverWait(driver, 5);
+        wait = new WebDriverWait(driver, 10);
         helper = new Helpers(driver);
     }
 

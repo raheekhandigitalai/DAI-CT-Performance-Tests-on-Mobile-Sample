@@ -1,5 +1,8 @@
 package helpers;
 
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
 import io.appium.java_client.AppiumDriver;
 import org.json.JSONObject;
 
@@ -9,6 +12,19 @@ public class Helpers {
 
     public Helpers(AppiumDriver driver) {
         this.driver = driver;
+    }
+
+    public void startCapturePerformanceMetricsBrowser(String nvProfile, String captureLevel) {
+        try {
+            if (captureLevel.equalsIgnoreCase("Device")) {
+                driver.executeScript("seetest:client.startPerformanceTransaction(\"" + nvProfile + "\")");
+            } else if (captureLevel.equalsIgnoreCase("Application")) {
+                driver.executeScript("seetest:client.startPerformanceTransactionForApplication(\"com.apple.mobilesafari\", \"" + nvProfile + "\")");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Could not start Capturing. Accepted Values: [Device, Application]");
+        }
     }
 
     public void startCapturePerformanceMetrics(String nvProfile, String captureLevel) {
@@ -36,6 +52,24 @@ public class Helpers {
         String text = jsonObject.getString("text");
         JSONObject textObject = new JSONObject(text);
         property = textObject.get(property).toString();
+        return property;
+    }
+
+    // Properties that can be fetched:
+    // networkProfile / cpuAvg / cpuMax / memAvg / memMax / batteryAvg / batteryMax / duration / speedIndex
+    public String getPropertyFromPerformanceTransactionAPI(String transactionId, String property) throws UnirestException {
+        HttpResponse<String> response = Unirest.get("https://uscloud.experitest.com/reporter/api/transactions/" + transactionId)
+                .header("Authorization", "Bearer " + new PropertiesReader().getProperty("accessKey"))
+                .asString();
+
+        String responseBody = response.getBody();
+        JSONObject jsonObject = new JSONObject(responseBody);
+
+        if (jsonObject.get(property) instanceof String) {
+            property = jsonObject.getString(property);
+        } else {
+            property = jsonObject.get(property).toString();
+        }
         return property;
     }
 

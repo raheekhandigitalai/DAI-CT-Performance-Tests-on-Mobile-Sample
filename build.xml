@@ -54,13 +54,5 @@
         </classes>
     </test>
 
-    <!--    <test name="test_exception_handling">-->
-
-    <!--        <parameter name="deviceQuery" value="@serialnumber='00008020-001C61863CE9002E'" />-->
-
-    <!--        <classes>-->
-    <!--            <class name="tests.ExceptionHandling"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
 
 </suite>
