@@ -72,7 +72,7 @@ public class PageLoadTimeTest {
             String transactionId = helper.getPropertyFromPerformanceTransactionReport(response, "transactionId");
 
             // Waiting few seconds to allow next API call to have some time for the data to accumulate after Transaction ends
-            Thread.sleep(5000);
+            Thread.sleep(10000);
 
             // Extract relevant properties from the Performance Transaction API Response
             speedIndex = helper.getPropertyFromPerformanceTransactionAPI(transactionId, "speedIndex");
@@ -104,9 +104,9 @@ public class PageLoadTimeTest {
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
         if (!result.isSuccess()) {
-            driver.executeScript("seetest:client.setReportStatus(\"Failed\",\"Test Failed\")");
+            helper.setReportStatus("Failed", "Test Failed");
         } else {
-            driver.executeScript("seetest:client.setReportStatus(\"Passed\",\"Test Passed\")");
+            helper.setReportStatus("Passed", "Test Passed");
         }
 
         driver.quit();

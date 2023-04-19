@@ -31,19 +31,6 @@ public class Helpers {
         this.driver = driver;
     }
 
-//    public void startCapturePerformanceMetricsBrowser(String nvProfile, String captureLevel) {
-//        try {
-//            if (captureLevel.equalsIgnoreCase("Device")) {
-//                driver.executeScript("seetest:client.startPerformanceTransaction(\"" + nvProfile + "\")");
-//            } else if (captureLevel.equalsIgnoreCase("Application")) {
-//                driver.executeScript("seetest:client.startPerformanceTransactionForApplication(\"com.apple.mobilesafari\", \"" + nvProfile + "\")");
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            System.out.println("Could not start Capturing. Accepted Values: [Device, Application]");
-//        }
-//    }
-
     public void startCapturePerformanceMetrics(String nvProfile, String captureLevel, String applicationName) {
         try {
             if (captureLevel.equalsIgnoreCase("Device")) {
@@ -76,7 +63,8 @@ public class Helpers {
     // networkProfile / cpuAvg / cpuMax / memAvg / memMax / batteryAvg / batteryMax / duration / speedIndex
     public String getPropertyFromPerformanceTransactionAPI(String transactionId, String property) throws UnirestException {
         HttpResponse<String> response = Unirest.get(new PropertiesReader().getProperty("urlForAPIs") + "/reporter/api/transactions/" + transactionId)
-                .header("Authorization", "Bearer " + new PropertiesReader().getProperty("accessKey"))
+                .header("Authorization", "Bearer " + System.getenv("ACCESS_KEY"))
+//                .header("Authorization", "Bearer " + new PropertiesReader().getProperty("accessKey"))
                 .asString();
 
         String responseBody = response.getBody();
@@ -136,7 +124,8 @@ public class Helpers {
 
         // Calls API to get HAR file
         URI uri = new URIBuilder(new PropertiesReader().getProperty("urlForAPIs") + "/reporter/api/transactions/" + transactionId + "/har")
-                .setParameter("token", new PropertiesReader().getProperty("accessKey"))
+                .setParameter("token", System.getenv("ACCESS_KEY"))
+//                .setParameter("token", new PropertiesReader().getProperty("accessKey"))
                 .build();
 
         HttpClient httpClient = HttpClientBuilder.create().build();
