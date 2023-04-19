@@ -1,0 +1,455 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "Experitest HAR",
+      "version": "0.1",
+      "comment": "mitmproxy version mitmproxy 4.0.4"
+    },
+    "entries": [
+      {
+        "startedDateTime": "2023-04-19T19:56:58.522555+00:00",
+        "time": 508,
+        "request": {
+          "method": "POST",
+          "url": "https://api.radar.io/v1/track",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api.radar.io"
+            },
+            {
+              "name": "x-newrelic-id",
+              "value": "VwEBVVFRGwUHUFJRAQgEVg=="
+            },
+            {
+              "name": "x-radar-device-model",
+              "value": "iPhone14,2"
+            },
+            {
+              "name": "x-radar-device-os",
+              "value": "15.1"
+            },
+            {
+              "name": "user-agent",
+              "value": "LeviStraussAmericasApp/06005011 CFNetwork/1325.0.1 Darwin/21.1.0"
+            },
+            {
+              "name": "cls-requestid",
+              "value": "-1117097724"
+            },
+            {
+              "name": "x-radar-config",
+              "value": "true"
+            },
+            {
+              "name": "x-radar-device-make",
+              "value": "Apple"
+            },
+            {
+              "name": "x-radar-device-type",
+              "value": "iOS"
+            },
+            {
+              "name": "newrelic",
+              "value": "ewoiZCI6IHsKImFjIjogIjM3NjQ3MiIsCiJhcCI6ICI2NzQzMzY5MzAiLAoiaWQiOiAiMmVmZjY2YjA5NjhkZWExZCIsCiJ0aSI6IDE2ODE5MzQyMTc5MTMsCiJ0ciI6ICIwNWMwMWE5NmNiM2UwZjJmMTc2ZDg0NThiNGE5NmQwMiIsCiJ0eSI6ICJNb2JpbGUiCn0sCiJ2IjogWwowLAoyCl0KfQ=="
+            },
+            {
+              "name": "content-length",
+              "value": "713"
+            },
+            {
+              "name": "authorization",
+              "value": "prj_live_pk_3d52c851433bf7acffa38e5e851a5e6ebd8b5e64"
+            },
+            {
+              "name": "tracestate",
+              "value": "@nr=0-2-376472-674336930-2eff66b0968dea1d--0--1681934217913"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "traceparent",
+              "value": "00-05c01a96cb3e0f2f176d8458b4a96d02-2eff66b0968dea1d-00"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-radar-sdk-version",
+              "value": "3.2.4"
+            },
+            {
+              "name": "if-none-match",
+              "value": "W/\"4e5-2oZgPmZu/MyzK5BWAFiprBt4rVE\""
+            }
+          ],
+          "queryString": [],
+          "headersSize": 1138,
+          "bodySize": 713,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"source\":\"FOREGROUND_LOCATION\",\"timeZoneOffset\":-25200,\"deviceId\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"country\":\"US\",\"deviceType\":\"iOS\",\"deviceMake\":\"Apple\",\"deviceOS\":\"15.1\",\"speed\":-1,\"foreground\":true,\"latitude\":37.405634358476412,\"locationAccuracyAuthorization\":\"FULL\",\"locationAuthorization\":\"GRANTED_BACKGROUND\",\"nearbyGeofences\":true,\"sessionId\":\"1681934188\",\"accuracy\":35,\"altitude\":11.509406566619873,\"id\":\"643ff59ff44990002641ebba\",\"replayed\":false,\"longitude\":-121.91638867804919,\"sdkVersion\":\"3.2.4\",\"installId\":\"23244A1C-17CF-40E0-9C28-4A555F9F1443\",\"deviceModel\":\"iPhone14,2\",\"verticalAccuracy\":1.0220273733139038,\"stopped\":true,\"mocked\":false,\"courseAccuracy\":-1,\"speedAccuracy\":-1,\"course\":-1}",
+            "params": []
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 19 Apr 2023 19:56:58 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "x-ratelimit-limit",
+              "value": "1500"
+            },
+            {
+              "name": "x-ratelimit-remaining",
+              "value": "1488"
+            },
+            {
+              "name": "x-ratelimit-reset",
+              "value": "1681934219"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"4e5-FfaIAwKzk7Gsk4IRaiWQqOFp4x8\""
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "cf-ray",
+              "value": "7ba7b6c1d99f96ae-SJC"
+            }
+          ],
+          "content": {
+            "size": 719,
+            "compression": 534,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 470,
+          "bodySize": 719
+        },
+        "cache": {},
+        "timings": {
+          "send": 7,
+          "receive": 6,
+          "wait": 242,
+          "connect": 66,
+          "ssl": 187
+        },
+        "serverIPAddress": "104.16.50.85",
+        "connection": "92b32602-dfcd-40eb-94f3-eb359f993873"
+      },
+      {
+        "startedDateTime": "2023-04-19T19:56:59.047710+00:00",
+        "time": 430,
+        "request": {
+          "method": "POST",
+          "url": "https://api.segment.io/v1/batch",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api.segment.io"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "tracestate",
+              "value": "@nr=0-2-376472-674336930-924dbe9567567322--0--1681934218322"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "newrelic",
+              "value": "ewoiZCI6IHsKImFjIjogIjM3NjQ3MiIsCiJhcCI6ICI2NzQzMzY5MzAiLAoiaWQiOiAiOTI0ZGJlOTU2NzU2NzMyMiIsCiJ0aSI6IDE2ODE5MzQyMTgzMjIsCiJ0ciI6ICI0NWIzYTZmN2M4YWZkYzhkNmVmMmViMTE5NDdmYjc3YiIsCiJ0eSI6ICJNb2JpbGUiCn0sCiJ2IjogWwowLAoyCl0KfQ=="
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "content-length",
+              "value": "1829"
+            },
+            {
+              "name": "user-agent",
+              "value": "analytics-ios/4.1.8"
+            },
+            {
+              "name": "x-newrelic-id",
+              "value": "VwEBVVFRGwUHUFJRAQgEVg=="
+            },
+            {
+              "name": "traceparent",
+              "value": "00-45b3a6f7c8afdc8d6ef2eb11947fb77b-924dbe9567567322-00"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 731,
+          "bodySize": 13302,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"batch\":[{\"messageId\":\"02CA4CC5-4A9F-42F6-9A3A-EF144A0092AB\",\"anonymousId\":\"883F7893-A2EE-48E2-98F8-F2710D2C562E\",\"event\":\"Application Opened\",\"context\":{\"screen\":{\"width\":390,\"height\":844},\"instanceId\":\"DDC2DF6E-9CE9-41F6-8317-418A76482FF2\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone14,2\",\"id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"15.1\"},\"locale\":\"en-US\",\"library\":{\"name\":\"analytics-ios\",\"version\":\"4.1.8\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"version\":\"6.5.1\",\"referring_application\":\"\",\"from_background\":false,\"url\":\"\",\"build\":\"06005011\"},\"type\":\"track\",\"timestamp\":\"2023-04-19T19:56:28.372Z\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"FEE0C8D3-0977-43CE-AE27-1FB4FF234B8B\",\"anonymousId\":\"883F7893-A2EE-48E2-98F8-F2710D2C562E\",\"context\":{\"screen\":{\"width\":390,\"height\":844},\"instanceId\":\"DDC2DF6E-9CE9-41F6-8317-418A76482FF2\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone14,2\",\"id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"15.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 12:56:32 PM\",\"language\":\"-\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"currency\":\"-\",\"brand\":\"Levi\",\"customer_account_type\":\"anonymous\",\"screen_name\":\"DiscoverScreen\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"customer_user_id\":\"anonymous\",\"app_id\":\"Levi\",\"internal_campaign_code\":\"-\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_loyalty_user\":\"-\",\"customer_state\":\"-\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"type\":\"screen\",\"timestamp\":\"2023-04-19T19:56:32.451Z\",\"name\":\"discover\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"9EB41954-DDF0-4D05-ABA4-1E13384BD67D\",\"anonymousId\":\"883F7893-A2EE-48E2-98F8-F2710D2C562E\",\"event\":\"Navigation Click\",\"context\":{\"screen\":{\"width\":390,\"height\":844},\"instanceId\":\"DDC2DF6E-9CE9-41F6-8317-418A76482FF2\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone14,2\",\"id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"15.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 12:56:34 PM\",\"language\":\"-\",\"link_id\":\"Homepage\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"currency\":\"-\",\"brand\":\"Levi\",\"customer_account_type\":\"anonymous\",\"screen_name\":\"DiscoverScreen\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"event\":\"Navigation Click\",\"customer_user_id\":\"anonymous\",\"app_id\":\"Levi\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_loyalty_user\":\"-\",\"internal_campaign_code\":\"-\",\"customer_state\":\"-\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"type\":\"track\",\"timestamp\":\"2023-04-19T19:56:34.850Z\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"66DA80F7-4E9C-4AEF-8722-147FFC35948A\",\"anonymousId\":\"883F7893-A2EE-48E2-98F8-F2710D2C562E\",\"event\":\"Navigation Click\",\"context\":{\"screen\":{\"width\":390,\"height\":844},\"instanceId\":\"DDC2DF6E-9CE9-41F6-8317-418A76482FF2\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone14,2\",\"id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"15.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 12:56:34 PM\",\"language\":\"-\",\"link_id\":\"Homepage\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"currency\":\"-\",\"brand\":\"Levi\",\"customer_account_type\":\"anonymous\",\"screen_name\":\"DiscoverScreen\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"event\":\"Navigation Click\",\"customer_user_id\":\"anonymous\",\"app_id\":\"Levi\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_loyalty_user\":\"-\",\"internal_campaign_code\":\"-\",\"customer_state\":\"-\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"type\":\"track\",\"timestamp\":\"2023-04-19T19:56:34.850Z\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"7C3AB91C-6200-4BB0-A579-3B7E568EEA99\",\"anonymousId\":\"883F7893-A2EE-48E2-98F8-F2710D2C562E\",\"context\":{\"screen\":{\"width\":390,\"height\":844},\"instanceId\":\"DDC2DF6E-9CE9-41F6-8317-418A76482FF2\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone14,2\",\"id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"15.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"finding_method\":\"browse\",\"screen_type\":\"HomeScreen\",\"time\":\"4\\/19\\/2023, 12:56:34 PM\",\"language\":\"-\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"currency\":\"-\",\"brand\":\"Levi\",\"customer_account_type\":\"anonymous\",\"screen_name\":\"HomeScreen\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"customer_user_id\":\"anonymous\",\"app_id\":\"Levi\",\"internal_campaign_code\":\"-\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_loyalty_user\":\"-\",\"customer_state\":\"-\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"type\":\"screen\",\"timestamp\":\"2023-04-19T19:56:34.893Z\",\"name\":\"homepage\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"24BC7D5D-864E-4D50-AFFD-857EA47A3C30\",\"anonymousId\":\"883F7893-A2EE-48E2-98F8-F2710D2C562E\",\"context\":{\"screen\":{\"width\":390,\"height\":844},\"instanceId\":\"DDC2DF6E-9CE9-41F6-8317-418A76482FF2\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone14,2\",\"id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"15.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"department\":\"-\",\"3\":{\"name\":\"505\u2122 Regular Fit Men's Jeans\",\"position\":4,\"product_id\":\"005052615\"},\"breadcrumb\":\"-\",\"customer_user_id\":\"anonymous\",\"device_model\":\"iPhone\",\"4\":{\"name\":\"541\u2122 Athletic Taper Fit Men's Jeans\",\"position\":5,\"product_id\":\"181810692\"},\"app_id\":\"Levi\",\"customer_auth_status\":\"guest\",\"currency\":\"-\",\"country\":\"United States\",\"6\":{\"name\":\"514\u2122 Straight Fit Men's Jeans\",\"position\":7,\"product_id\":\"005141676\"},\"5\":{\"name\":\"Red Tab\u2122 Vintage T-Shirt\",\"position\":6,\"product_id\":\"A06370046\"},\"internal_campaign_code\":\"-\",\"7\":{\"name\":\"510\u2122 Skinny Fit Men's Jeans\",\"position\":8,\"product_id\":\"055101292\"},\"app_name\":\"com.levisstraussamericasaspp\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"screen_type\":\"HomeScreen\",\"customer_state\":\"-\",\"brand\":\"Levi\",\"customer_loyalty_onboarded\":\"N\",\"customer_account_type\":\"anonymous\",\"customer_city\":\"-\",\"customer_loyalty_geo\":\"lsa\",\"device_type\":\"phone\",\"screen_name\":\"HomeScreen\",\"customer_loyalty_user\":\"-\",\"0\":{\"name\":\"Icon Tote Bag\",\"position\":1,\"product_id\":\"D75450018\"},\"language\":\"-\",\"time\":\"4\\/19\\/2023, 12:56:58 PM\",\"1\":{\"name\":\"511\u2122 Slim Fit Men's Jeans\",\"position\":2,\"product_id\":\"045115522\"},\"experience\":\"Mobile App\",\"2\":{\"name\":\"501\u00ae Original Fit Men's Jeans\",\"position\":3,\"product_id\":\"005013370\"},\"finding_method\":\"browse\"},\"type\":\"screen\",\"timestamp\":\"2023-04-19T19:56:58.024Z\",\"name\":\"plp\\/New Arrivals\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"515309F5-9E93-4AF8-85D8-1EF129515CE6\",\"anonymousId\":\"883F7893-A2EE-48E2-98F8-F2710D2C562E\",\"event\":\"Product List Viewed\",\"context\":{\"screen\":{\"width\":390,\"height\":844},\"instanceId\":\"DDC2DF6E-9CE9-41F6-8317-418A76482FF2\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone14,2\",\"id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"15.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"finding_method\":\"browse\",\"totalResults\":8,\"screen_type\":\"HomeScreen\",\"time\":\"4\\/19\\/2023, 12:56:58 PM\",\"pagination\":0,\"language\":\"-\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"category\":\"New Arrivals\",\"products\":[{\"name\":\"Icon Tote Bag\",\"position\":1,\"product_id\":\"D75450018\"},{\"name\":\"511\u2122 Slim Fit Men's Jeans\",\"position\":2,\"product_id\":\"045115522\"},{\"name\":\"501\u00ae Original Fit Men's Jeans\",\"position\":3,\"product_id\":\"005013370\"},{\"name\":\"505\u2122 Regular Fit Men's Jeans\",\"position\":4,\"product_id\":\"005052615\"},{\"name\":\"541\u2122 Athletic Taper Fit Men's Jeans\",\"position\":5,\"product_id\":\"181810692\"},{\"name\":\"Red Tab\u2122 Vintage T-Shirt\",\"position\":6,\"product_id\":\"A06370046\"},{\"name\":\"514\u2122 Straight Fit Men's Jeans\",\"position\":7,\"product_id\":\"005141676\"},{\"name\":\"510\u2122 Skinny Fit Men's Jeans\",\"position\":8,\"product_id\":\"055101292\"}],\"screen_name\":\"HomeScreen\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"event\":\"Product List Viewed\",\"customer_user_id\":\"anonymous\",\"internal_campaign_code\":\"-\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_state\":\"-\",\"customer_loyalty_user\":\"-\",\"app_id\":\"Levi\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"type\":\"track\",\"timestamp\":\"2023-04-19T19:56:58.025Z\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"72FA14BC-30D6-47F4-BF3E-E8499AECB48D\",\"anonymousId\":\"883F7893-A2EE-48E2-98F8-F2710D2C562E\",\"context\":{\"screen\":{\"width\":390,\"height\":844},\"instanceId\":\"DDC2DF6E-9CE9-41F6-8317-418A76482FF2\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone14,2\",\"id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"15.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"finding_method\":\"browse\",\"totalResults\":8,\"screen_type\":\"HomeScreen\",\"time\":\"4\\/19\\/2023, 12:56:58 PM\",\"pagination\":0,\"language\":\"-\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"category\":\"New Arrivals\",\"products\":[{\"name\":\"Icon Tote Bag\",\"position\":1,\"product_id\":\"D75450018\"},{\"name\":\"511\u2122 Slim Fit Men's Jeans\",\"position\":2,\"product_id\":\"045115522\"},{\"name\":\"501\u00ae Original Fit Men's Jeans\",\"position\":3,\"product_id\":\"005013370\"},{\"name\":\"505\u2122 Regular Fit Men's Jeans\",\"position\":4,\"product_id\":\"005052615\"},{\"name\":\"541\u2122 Athletic Taper Fit Men's Jeans\",\"position\":5,\"product_id\":\"181810692\"},{\"name\":\"Red Tab\u2122 Vintage T-Shirt\",\"position\":6,\"product_id\":\"A06370046\"},{\"name\":\"514\u2122 Straight Fit Men's Jeans\",\"position\":7,\"product_id\":\"005141676\"},{\"name\":\"510\u2122 Skinny Fit Men's Jeans\",\"position\":8,\"product_id\":\"055101292\"}],\"screen_name\":\"HomeScreen\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"customer_user_id\":\"anonymous\",\"internal_campaign_code\":\"-\",\"app_id\":\"Levi\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_state\":\"-\",\"customer_loyalty_user\":\"-\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"type\":\"screen\",\"timestamp\":\"2023-04-19T19:56:58.026Z\",\"name\":\"Search Results Page\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}}],\"writeKey\":\"1iSCJKIpH5CDSw0sV0tk1qLYOA8ztIuZ\",\"sentAt\":\"2023-04-19T19:56:58.321Z\"}",
+            "params": []
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 19 Apr 2023 19:56:59 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "content-length",
+              "value": "21"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            },
+            {
+              "name": "vary",
+              "value": "Origin"
+            }
+          ],
+          "content": {
+            "size": 21,
+            "compression": 0,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": 195,
+          "bodySize": 21
+        },
+        "cache": {},
+        "timings": {
+          "send": 4,
+          "receive": 4,
+          "wait": 149,
+          "connect": 82,
+          "ssl": 191
+        },
+        "serverIPAddress": "44.236.54.82",
+        "connection": "ae7e6cf3-f281-4df6-a0e7-a343d85e74d2"
+      },
+      {
+        "startedDateTime": "2023-04-19T19:56:59.078374+00:00",
+        "time": 525,
+        "request": {
+          "method": "POST",
+          "url": "https://api2.amplitude.com/",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api2.amplitude.com"
+            },
+            {
+              "name": "content-type",
+              "value": "application/x-www-form-urlencoded"
+            },
+            {
+              "name": "tracestate",
+              "value": "@nr=0-2-376472-674336930-5a02fbe8b32b1132--0--1681934218420"
+            },
+            {
+              "name": "cls-requestid",
+              "value": "-738024048"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "newrelic",
+              "value": "ewoiZCI6IHsKImFjIjogIjM3NjQ3MiIsCiJhcCI6ICI2NzQzMzY5MzAiLAoiaWQiOiAiNWEwMmZiZThiMzJiMTEzMiIsCiJ0aSI6IDE2ODE5MzQyMTg0MjAsCiJ0ciI6ICIxZjE2NGUwY2ZkZWZkODcwNDg1NTkyMjZjOWJmYjM1ZSIsCiJ0eSI6ICJNb2JpbGUiCn0sCiJ2IjogWwowLAoyCl0KfQ=="
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "content-length",
+              "value": "18201"
+            },
+            {
+              "name": "user-agent",
+              "value": "LeviStraussAmericasApp/06005011 CFNetwork/1325.0.1 Darwin/21.1.0"
+            },
+            {
+              "name": "x-newrelic-id",
+              "value": "VwEBVVFRGwUHUFJRAQgEVg=="
+            },
+            {
+              "name": "traceparent",
+              "value": "00-1f164e0cfdefd87048559226c9bfb35e-5a02fbe8b32b1132-00"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 814,
+          "bodySize": 18201,
+          "postData": {
+            "mimeType": "application/x-www-form-urlencoded",
+            "text": "v=3&client=c477fe21fa9e7e6dd0e570d364db49a5&e=%5B%7B%22session_id%22%3A1681933795681%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Application%20Opened%22%2C%22sequence_number%22%3A151%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%7D%2C%22device_id%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%2C%22event_properties%22%3A%7B%22version%22%3A%226.5.1%22%2C%22referring_application%22%3A%22%22%2C%22from_background%22%3Afalse%2C%22url%22%3A%22%22%2C%22build%22%3A%2206005011%22%7D%2C%22uuid%22%3A%221D169132-F211-455B-A27D-8D80A0D13D1A%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A151%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681934188372%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2215.1%22%2C%22device_model%22%3A%22iPhone14%2C2%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681933795681%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Loaded%20a%20Screen%22%2C%22sequence_number%22%3A152%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%7D%2C%22device_id%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%22screen_type%22%3A%22DiscoverScreen%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%2012%3A56%3A32%20PM%22%2C%22language%22%3A%22-%22%2C%22country%22%3A%22United%20States%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22brand%22%3A%22Levi%22%2C%22currency%22%3A%22-%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22name%22%3A%22discover%22%2C%22app_id%22%3A%22Levi%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22internal_campaign_code%22%3A%22-%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%22screen_name%22%3A%22DiscoverScreen%22%2C%22department%22%3A%22-%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22customer_state%22%3A%22-%22%2C%22device_model%22%3A%22iPhone%22%2C%22breadcrumb%22%3A%22-%22%2C%22experience%22%3A%22Mobile%20App%22%2C%22device_type%22%3A%22phone%22%2C%22customer_city%22%3A%22-%22%2C%22customer_auth_status%22%3A%22guest%22%7D%2C%22uuid%22%3A%22E2DEFAA3-E482-41DB-A609-36C5476696D7%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A152%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681934192450%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2215.1%22%2C%22device_model%22%3A%22iPhone14%2C2%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681933795681%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Navigation%20Click%22%2C%22sequence_number%22%3A153%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%7D%2C%22device_id%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%22screen_type%22%3A%22DiscoverScreen%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%2012%3A56%3A34%20PM%22%2C%22language%22%3A%22-%22%2C%22link_id%22%3A%22Homepage%22%2C%22country%22%3A%22United%20States%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22brand%22%3A%22Levi%22%2C%22currency%22%3A%22-%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22app_id%22%3A%22Levi%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22internal_campaign_code%22%3A%22-%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22event%22%3A%22Navigation%20Click%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%22department%22%3A%22-%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22screen_name%22%3A%22DiscoverScreen%22%2C%22customer_state%22%3A%22-%22%2C%22device_model%22%3A%22iPhone%22%2C%22breadcrumb%22%3A%22-%22%2C%22experience%22%3A%22Mobile%20App%22%2C%22device_type%22%3A%22phone%22%2C%22customer_city%22%3A%22-%22%2C%22customer_auth_status%22%3A%22guest%22%7D%2C%22uuid%22%3A%22B3231421-724A-4015-B963-1668DAD2F526%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A153%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681934194849%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2215.1%22%2C%22device_model%22%3A%22iPhone14%2C2%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681933795681%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Navigation%20Click%22%2C%22sequence_number%22%3A154%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%7D%2C%22device_id%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%22screen_type%22%3A%22DiscoverScreen%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%2012%3A56%3A34%20PM%22%2C%22language%22%3A%22-%22%2C%22link_id%22%3A%22Homepage%22%2C%22country%22%3A%22United%20States%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22brand%22%3A%22Levi%22%2C%22currency%22%3A%22-%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22app_id%22%3A%22Levi%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22internal_campaign_code%22%3A%22-%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22event%22%3A%22Navigation%20Click%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%22department%22%3A%22-%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22screen_name%22%3A%22DiscoverScreen%22%2C%22customer_state%22%3A%22-%22%2C%22device_model%22%3A%22iPhone%22%2C%22breadcrumb%22%3A%22-%22%2C%22experience%22%3A%22Mobile%20App%22%2C%22device_type%22%3A%22phone%22%2C%22customer_city%22%3A%22-%22%2C%22customer_auth_status%22%3A%22guest%22%7D%2C%22uuid%22%3A%22280CCB6C-E3BA-4B5B-9477-22AEF2D91165%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A154%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681934194850%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2215.1%22%2C%22device_model%22%3A%22iPhone14%2C2%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681933795681%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Loaded%20a%20Screen%22%2C%22sequence_number%22%3A155%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%7D%2C%22device_id%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%22screen_type%22%3A%22HomeScreen%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%2012%3A56%3A34%20PM%22%2C%22language%22%3A%22-%22%2C%22country%22%3A%22United%20States%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22brand%22%3A%22Levi%22%2C%22currency%22%3A%22-%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22name%22%3A%22homepage%22%2C%22app_id%22%3A%22Levi%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22internal_campaign_code%22%3A%22-%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%22screen_name%22%3A%22HomeScreen%22%2C%22department%22%3A%22-%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22customer_state%22%3A%22-%22%2C%22device_model%22%3A%22iPhone%22%2C%22breadcrumb%22%3A%22-%22%2C%22experience%22%3A%22Mobile%20App%22%2C%22device_type%22%3A%22phone%22%2C%22customer_city%22%3A%22-%22%2C%22customer_auth_status%22%3A%22guest%22%7D%2C%22uuid%22%3A%2251870B64-7DFA-4BDA-B8EE-20539C50B940%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A155%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681934194893%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2215.1%22%2C%22device_model%22%3A%22iPhone14%2C2%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681933795681%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Loaded%20a%20Screen%22%2C%22sequence_number%22%3A156%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%7D%2C%22device_id%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%223%22%3A%7B%22name%22%3A%22505%E2%84%A2%20Regular%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A4%2C%22product_id%22%3A%22005052615%22%7D%2C%22department%22%3A%22-%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%224%22%3A%7B%22name%22%3A%22541%E2%84%A2%20Athletic%20Taper%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A5%2C%22product_id%22%3A%22181810692%22%7D%2C%22device_model%22%3A%22iPhone%22%2C%22app_id%22%3A%22Levi%22%2C%22country%22%3A%22United%20States%22%2C%22currency%22%3A%22-%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22internal_campaign_code%22%3A%22-%22%2C%225%22%3A%7B%22name%22%3A%22Red%20Tab%E2%84%A2%20Vintage%20T-Shirt%22%2C%22position%22%3A6%2C%22product_id%22%3A%22A06370046%22%7D%2C%226%22%3A%7B%22name%22%3A%22514%E2%84%A2%20Straight%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A7%2C%22product_id%22%3A%22005141676%22%7D%2C%227%22%3A%7B%22name%22%3A%22510%E2%84%A2%20Skinny%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A8%2C%22product_id%22%3A%22055101292%22%7D%2C%22customer_auth_status%22%3A%22guest%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22screen_type%22%3A%22HomeScreen%22%2C%22customer_state%22%3A%22-%22%2C%22brand%22%3A%22Levi%22%2C%22name%22%3A%22plp%5C%2FNew%20Arrivals%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22customer_city%22%3A%22-%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22device_type%22%3A%22phone%22%2C%22screen_name%22%3A%22HomeScreen%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%220%22%3A%7B%22name%22%3A%22Icon%20Tote%20Bag%22%2C%22position%22%3A1%2C%22product_id%22%3A%22D75450018%22%7D%2C%22language%22%3A%22-%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%2012%3A56%3A58%20PM%22%2C%221%22%3A%7B%22name%22%3A%22511%E2%84%A2%20Slim%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A2%2C%22product_id%22%3A%22045115522%22%7D%2C%22experience%22%3A%22Mobile%20App%22%2C%22breadcrumb%22%3A%22-%22%2C%222%22%3A%7B%22name%22%3A%22501%C2%AE%20Original%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A3%2C%22product_id%22%3A%22005013370%22%7D%7D%2C%22uuid%22%3A%226DB0C938-4861-46B8-A360-49DA01086213%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A156%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681934218024%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2215.1%22%2C%22device_model%22%3A%22iPhone14%2C2%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681933795681%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Product%20List%20Viewed%22%2C%22sequence_number%22%3A157%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%7D%2C%22device_id%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%22totalResults%22%3A8%2C%22screen_type%22%3A%22HomeScreen%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%2012%3A56%3A58%20PM%22%2C%22language%22%3A%22-%22%2C%22pagination%22%3A0%2C%22country%22%3A%22United%20States%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22brand%22%3A%22Levi%22%2C%22currency%22%3A%22-%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22category%22%3A%22New%20Arrivals%22%2C%22products%22%3A%5B%7B%22name%22%3A%22Icon%20Tote%20Bag%22%2C%22position%22%3A1%2C%22product_id%22%3A%22D75450018%22%7D%2C%7B%22name%22%3A%22511%E2%84%A2%20Slim%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A2%2C%22product_id%22%3A%22045115522%22%7D%2C%7B%22name%22%3A%22501%C2%AE%20Original%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A3%2C%22product_id%22%3A%22005013370%22%7D%2C%7B%22name%22%3A%22505%E2%84%A2%20Regular%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A4%2C%22product_id%22%3A%22005052615%22%7D%2C%7B%22name%22%3A%22541%E2%84%A2%20Athletic%20Taper%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A5%2C%22product_id%22%3A%22181810692%22%7D%2C%7B%22name%22%3A%22Red%20Tab%E2%84%A2%20Vintage%20T-Shirt%22%2C%22position%22%3A6%2C%22product_id%22%3A%22A06370046%22%7D%2C%7B%22name%22%3A%22514%E2%84%A2%20Straight%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A7%2C%22product_id%22%3A%22005141676%22%7D%2C%7B%22name%22%3A%22510%E2%84%A2%20Skinny%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A8%2C%22product_id%22%3A%22055101292%22%7D%5D%2C%22screen_name%22%3A%22HomeScreen%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22internal_campaign_code%22%3A%22-%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22event%22%3A%22Product%20List%20Viewed%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%22department%22%3A%22-%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22customer_state%22%3A%22-%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%22app_id%22%3A%22Levi%22%2C%22device_model%22%3A%22iPhone%22%2C%22breadcrumb%22%3A%22-%22%2C%22experience%22%3A%22Mobile%20App%22%2C%22device_type%22%3A%22phone%22%2C%22customer_city%22%3A%22-%22%2C%22customer_auth_status%22%3A%22guest%22%7D%2C%22uuid%22%3A%223E5647D8-E96C-47C0-A0DF-A2E639F11D3F%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A157%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681934218025%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2215.1%22%2C%22device_model%22%3A%22iPhone14%2C2%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681933795681%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Loaded%20a%20Screen%22%2C%22sequence_number%22%3A158%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%7D%2C%22device_id%22%3A%22F32993E3-7B16-4AAF-9BF7-43AA2D06E114%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%22totalResults%22%3A8%2C%22screen_type%22%3A%22HomeScreen%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%2012%3A56%3A58%20PM%22%2C%22language%22%3A%22-%22%2C%22pagination%22%3A0%2C%22country%22%3A%22United%20States%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22brand%22%3A%22Levi%22%2C%22currency%22%3A%22-%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22category%22%3A%22New%20Arrivals%22%2C%22products%22%3A%5B%7B%22name%22%3A%22Icon%20Tote%20Bag%22%2C%22position%22%3A1%2C%22product_id%22%3A%22D75450018%22%7D%2C%7B%22name%22%3A%22511%E2%84%A2%20Slim%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A2%2C%22product_id%22%3A%22045115522%22%7D%2C%7B%22name%22%3A%22501%C2%AE%20Original%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A3%2C%22product_id%22%3A%22005013370%22%7D%2C%7B%22name%22%3A%22505%E2%84%A2%20Regular%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A4%2C%22product_id%22%3A%22005052615%22%7D%2C%7B%22name%22%3A%22541%E2%84%A2%20Athletic%20Taper%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A5%2C%22product_id%22%3A%22181810692%22%7D%2C%7B%22name%22%3A%22Red%20Tab%E2%84%A2%20Vintage%20T-Shirt%22%2C%22position%22%3A6%2C%22product_id%22%3A%22A06370046%22%7D%2C%7B%22name%22%3A%22514%E2%84%A2%20Straight%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A7%2C%22product_id%22%3A%22005141676%22%7D%2C%7B%22name%22%3A%22510%E2%84%A2%20Skinny%20Fit%20Men%27s%20Jeans%22%2C%22position%22%3A8%2C%22product_id%22%3A%22055101292%22%7D%5D%2C%22screen_name%22%3A%22HomeScreen%22%2C%22app_id%22%3A%22Levi%22%2C%22internal_campaign_code%22%3A%22-%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%22department%22%3A%22-%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22customer_state%22%3A%22-%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%22name%22%3A%22Search%20Results%20Page%22%2C%22device_model%22%3A%22iPhone%22%2C%22breadcrumb%22%3A%22-%22%2C%22experience%22%3A%22Mobile%20App%22%2C%22device_type%22%3A%22phone%22%2C%22customer_city%22%3A%22-%22%2C%22customer_auth_status%22%3A%22guest%22%7D%2C%22uuid%22%3A%221862C945-5AC0-4ADA-B52A-9AEDC28B12AF%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A158%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681934218026%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2215.1%22%2C%22device_model%22%3A%22iPhone14%2C2%22%2C%22group_properties%22%3A%7B%7D%7D%5D&upload_time=1681934218419&checksum=f23fd395b64f5eea0054a81e595e34d7",
+            "params": [
+              {
+                "name": "v",
+                "value": "3"
+              },
+              {
+                "name": "client",
+                "value": "c477fe21fa9e7e6dd0e570d364db49a5"
+              },
+              {
+                "name": "e",
+                "value": "[{\"session_id\":1681933795681,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Application Opened\",\"sequence_number\":151,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\"},\"device_id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"event_properties\":{\"version\":\"6.5.1\",\"referring_application\":\"\",\"from_background\":false,\"url\":\"\",\"build\":\"06005011\"},\"uuid\":\"1D169132-F211-455B-A27D-8D80A0D13D1A\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":151,\"carrier\":\"Unknown\",\"timestamp\":1681934188372,\"groups\":{},\"os_version\":\"15.1\",\"device_model\":\"iPhone14,2\",\"group_properties\":{}},{\"session_id\":1681933795681,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Loaded a Screen\",\"sequence_number\":152,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\"},\"device_id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"event_properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 12:56:32 PM\",\"language\":\"-\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"name\":\"discover\",\"app_id\":\"Levi\",\"customer_loyalty_geo\":\"lsa\",\"internal_campaign_code\":\"-\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"customer_user_id\":\"anonymous\",\"screen_name\":\"DiscoverScreen\",\"department\":\"-\",\"customer_loyalty_user\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_state\":\"-\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"uuid\":\"E2DEFAA3-E482-41DB-A609-36C5476696D7\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":152,\"carrier\":\"Unknown\",\"timestamp\":1681934192450,\"groups\":{},\"os_version\":\"15.1\",\"device_model\":\"iPhone14,2\",\"group_properties\":{}},{\"session_id\":1681933795681,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Navigation Click\",\"sequence_number\":153,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\"},\"device_id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"event_properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 12:56:34 PM\",\"language\":\"-\",\"link_id\":\"Homepage\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"app_id\":\"Levi\",\"customer_loyalty_geo\":\"lsa\",\"internal_campaign_code\":\"-\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"event\":\"Navigation Click\",\"customer_user_id\":\"anonymous\",\"department\":\"-\",\"customer_loyalty_user\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"screen_name\":\"DiscoverScreen\",\"customer_state\":\"-\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"uuid\":\"B3231421-724A-4015-B963-1668DAD2F526\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":153,\"carrier\":\"Unknown\",\"timestamp\":1681934194849,\"groups\":{},\"os_version\":\"15.1\",\"device_model\":\"iPhone14,2\",\"group_properties\":{}},{\"session_id\":1681933795681,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Navigation Click\",\"sequence_number\":154,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\"},\"device_id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"event_properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 12:56:34 PM\",\"language\":\"-\",\"link_id\":\"Homepage\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"app_id\":\"Levi\",\"customer_loyalty_geo\":\"lsa\",\"internal_campaign_code\":\"-\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"event\":\"Navigation Click\",\"customer_user_id\":\"anonymous\",\"department\":\"-\",\"customer_loyalty_user\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"screen_name\":\"DiscoverScreen\",\"customer_state\":\"-\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"uuid\":\"280CCB6C-E3BA-4B5B-9477-22AEF2D91165\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":154,\"carrier\":\"Unknown\",\"timestamp\":1681934194850,\"groups\":{},\"os_version\":\"15.1\",\"device_model\":\"iPhone14,2\",\"group_properties\":{}},{\"session_id\":1681933795681,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Loaded a Screen\",\"sequence_number\":155,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\"},\"device_id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"event_properties\":{\"finding_method\":\"browse\",\"screen_type\":\"HomeScreen\",\"time\":\"4\\/19\\/2023, 12:56:34 PM\",\"language\":\"-\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"name\":\"homepage\",\"app_id\":\"Levi\",\"customer_loyalty_geo\":\"lsa\",\"internal_campaign_code\":\"-\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"customer_user_id\":\"anonymous\",\"screen_name\":\"HomeScreen\",\"department\":\"-\",\"customer_loyalty_user\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_state\":\"-\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"uuid\":\"51870B64-7DFA-4BDA-B8EE-20539C50B940\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":155,\"carrier\":\"Unknown\",\"timestamp\":1681934194893,\"groups\":{},\"os_version\":\"15.1\",\"device_model\":\"iPhone14,2\",\"group_properties\":{}},{\"session_id\":1681933795681,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Loaded a Screen\",\"sequence_number\":156,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\"},\"device_id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"event_properties\":{\"finding_method\":\"browse\",\"3\":{\"name\":\"505\u2122 Regular Fit Men's Jeans\",\"position\":4,\"product_id\":\"005052615\"},\"department\":\"-\",\"customer_user_id\":\"anonymous\",\"4\":{\"name\":\"541\u2122 Athletic Taper Fit Men's Jeans\",\"position\":5,\"product_id\":\"181810692\"},\"device_model\":\"iPhone\",\"app_id\":\"Levi\",\"country\":\"United States\",\"currency\":\"-\",\"app_name\":\"com.levisstraussamericasaspp\",\"internal_campaign_code\":\"-\",\"5\":{\"name\":\"Red Tab\u2122 Vintage T-Shirt\",\"position\":6,\"product_id\":\"A06370046\"},\"6\":{\"name\":\"514\u2122 Straight Fit Men's Jeans\",\"position\":7,\"product_id\":\"005141676\"},\"7\":{\"name\":\"510\u2122 Skinny Fit Men's Jeans\",\"position\":8,\"product_id\":\"055101292\"},\"customer_auth_status\":\"guest\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"screen_type\":\"HomeScreen\",\"customer_state\":\"-\",\"brand\":\"Levi\",\"name\":\"plp\\/New Arrivals\",\"customer_loyalty_onboarded\":\"N\",\"customer_account_type\":\"anonymous\",\"customer_city\":\"-\",\"customer_loyalty_geo\":\"lsa\",\"device_type\":\"phone\",\"screen_name\":\"HomeScreen\",\"customer_loyalty_user\":\"-\",\"0\":{\"name\":\"Icon Tote Bag\",\"position\":1,\"product_id\":\"D75450018\"},\"language\":\"-\",\"time\":\"4\\/19\\/2023, 12:56:58 PM\",\"1\":{\"name\":\"511\u2122 Slim Fit Men's Jeans\",\"position\":2,\"product_id\":\"045115522\"},\"experience\":\"Mobile App\",\"breadcrumb\":\"-\",\"2\":{\"name\":\"501\u00ae Original Fit Men's Jeans\",\"position\":3,\"product_id\":\"005013370\"}},\"uuid\":\"6DB0C938-4861-46B8-A360-49DA01086213\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":156,\"carrier\":\"Unknown\",\"timestamp\":1681934218024,\"groups\":{},\"os_version\":\"15.1\",\"device_model\":\"iPhone14,2\",\"group_properties\":{}},{\"session_id\":1681933795681,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Product List Viewed\",\"sequence_number\":157,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\"},\"device_id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"event_properties\":{\"finding_method\":\"browse\",\"totalResults\":8,\"screen_type\":\"HomeScreen\",\"time\":\"4\\/19\\/2023, 12:56:58 PM\",\"language\":\"-\",\"pagination\":0,\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"category\":\"New Arrivals\",\"products\":[{\"name\":\"Icon Tote Bag\",\"position\":1,\"product_id\":\"D75450018\"},{\"name\":\"511\u2122 Slim Fit Men's Jeans\",\"position\":2,\"product_id\":\"045115522\"},{\"name\":\"501\u00ae Original Fit Men's Jeans\",\"position\":3,\"product_id\":\"005013370\"},{\"name\":\"505\u2122 Regular Fit Men's Jeans\",\"position\":4,\"product_id\":\"005052615\"},{\"name\":\"541\u2122 Athletic Taper Fit Men's Jeans\",\"position\":5,\"product_id\":\"181810692\"},{\"name\":\"Red Tab\u2122 Vintage T-Shirt\",\"position\":6,\"product_id\":\"A06370046\"},{\"name\":\"514\u2122 Straight Fit Men's Jeans\",\"position\":7,\"product_id\":\"005141676\"},{\"name\":\"510\u2122 Skinny Fit Men's Jeans\",\"position\":8,\"product_id\":\"055101292\"}],\"screen_name\":\"HomeScreen\",\"customer_loyalty_geo\":\"lsa\",\"internal_campaign_code\":\"-\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"event\":\"Product List Viewed\",\"customer_user_id\":\"anonymous\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_state\":\"-\",\"customer_loyalty_user\":\"-\",\"app_id\":\"Levi\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"uuid\":\"3E5647D8-E96C-47C0-A0DF-A2E639F11D3F\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":157,\"carrier\":\"Unknown\",\"timestamp\":1681934218025,\"groups\":{},\"os_version\":\"15.1\",\"device_model\":\"iPhone14,2\",\"group_properties\":{}},{\"session_id\":1681933795681,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Loaded a Screen\",\"sequence_number\":158,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\"},\"device_id\":\"F32993E3-7B16-4AAF-9BF7-43AA2D06E114\",\"event_properties\":{\"finding_method\":\"browse\",\"totalResults\":8,\"screen_type\":\"HomeScreen\",\"time\":\"4\\/19\\/2023, 12:56:58 PM\",\"language\":\"-\",\"pagination\":0,\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"category\":\"New Arrivals\",\"products\":[{\"name\":\"Icon Tote Bag\",\"position\":1,\"product_id\":\"D75450018\"},{\"name\":\"511\u2122 Slim Fit Men's Jeans\",\"position\":2,\"product_id\":\"045115522\"},{\"name\":\"501\u00ae Original Fit Men's Jeans\",\"position\":3,\"product_id\":\"005013370\"},{\"name\":\"505\u2122 Regular Fit Men's Jeans\",\"position\":4,\"product_id\":\"005052615\"},{\"name\":\"541\u2122 Athletic Taper Fit Men's Jeans\",\"position\":5,\"product_id\":\"181810692\"},{\"name\":\"Red Tab\u2122 Vintage T-Shirt\",\"position\":6,\"product_id\":\"A06370046\"},{\"name\":\"514\u2122 Straight Fit Men's Jeans\",\"position\":7,\"product_id\":\"005141676\"},{\"name\":\"510\u2122 Skinny Fit Men's Jeans\",\"position\":8,\"product_id\":\"055101292\"}],\"screen_name\":\"HomeScreen\",\"app_id\":\"Levi\",\"internal_campaign_code\":\"-\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"customer_user_id\":\"anonymous\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_state\":\"-\",\"customer_loyalty_user\":\"-\",\"name\":\"Search Results Page\",\"device_model\":\"iPhone\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"uuid\":\"1862C945-5AC0-4ADA-B52A-9AEDC28B12AF\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":158,\"carrier\":\"Unknown\",\"timestamp\":1681934218026,\"groups\":{},\"os_version\":\"15.1\",\"device_model\":\"iPhone14,2\",\"group_properties\":{}}]"
+              },
+              {
+                "name": "upload_time",
+                "value": "1681934218419"
+              },
+              {
+                "name": "checksum",
+                "value": "f23fd395b64f5eea0054a81e595e34d7"
+              }
+            ]
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 19 Apr 2023 19:56:59 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html;charset=utf-8"
+            },
+            {
+              "name": "content-length",
+              "value": "7"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST"
+            },
+            {
+              "name": "trace-id",
+              "value": "Root=1-6440478b-6b0e59494f2330281b89ef01"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15768000"
+            }
+          ],
+          "content": {
+            "size": 7,
+            "compression": 0,
+            "mimeType": "text/html;charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 328,
+          "bodySize": 7
+        },
+        "cache": {},
+        "timings": {
+          "send": 57,
+          "receive": 9,
+          "wait": 189,
+          "connect": 81,
+          "ssl": 189
+        },
+        "serverIPAddress": "52.12.216.201",
+        "connection": "48497749-8579-4202-91a0-9b18c16c8f91"
+      }
+    ],
+    "_websocketStart": [
+
+    ],
+    "_websocketEnd": [
+
+    ],
+    "_websocketMsg": [
+
+    ],
+    "_errorEntries": [
+
+    ]
+  }
+}

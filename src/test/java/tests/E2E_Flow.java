@@ -67,7 +67,7 @@ public class E2E_Flow {
             driver.executeScript("seetest:client.install(\"cloud:com.experitest.ExperiBank\", \"false\", \"false\")");
 
             // Start Performance Transaction Capturing
-            helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
+            helper.startCapturePerformanceMetrics(nvProfile, captureLevel, "com.experitest.ExperiBank");
 
             // Click on the EriBank icon on the Device Home Page
             driver.findElement(By.xpath("//XCUIElementTypeIcon[@name='SeeTestDemoApp']")).click();
@@ -88,6 +88,7 @@ public class E2E_Flow {
             helper.addReportStep(link);
         } catch (Exception e) {
             System.out.println("Something went wrong in the script for Test: '" + method.getName() + "'");
+            e.printStackTrace();
         }
 
         // Add custom properties that allow for easier filtering for the Automated Test Results
@@ -104,7 +105,7 @@ public class E2E_Flow {
             driver.findElement(By.name("usernameTextField")).sendKeys("company");
             driver.findElement(By.name("passwordTextField")).sendKeys("company");
 
-            helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
+            helper.startCapturePerformanceMetrics(nvProfile, captureLevel, "com.experitest.ExperiBank");
 
             driver.findElement(By.name("loginButton")).click();
             wait.until(ExpectedConditions.elementToBeClickable(By.name("Make Payment")));
@@ -117,6 +118,7 @@ public class E2E_Flow {
             helper.addReportStep(link);
         } catch (Exception e) {
             System.out.println("Something went wrong in the script for Test: '" + method.getName() + "'");
+            e.printStackTrace();
         }
 
         helper.addPropertyForReporting("nvProfile", nvProfile);
@@ -140,7 +142,7 @@ public class E2E_Flow {
             wait.until(ExpectedConditions.elementToBeClickable(By.name("Switzerland")));
             driver.findElement(By.name("Switzerland")).click();
 
-            helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
+            helper.startCapturePerformanceMetrics(nvProfile, captureLevel, "com.experitest.ExperiBank");
 
             driver.findElement(By.name("sendPaymentButton")).click();
             driver.findElement(By.name("Yes")).click();
@@ -155,6 +157,7 @@ public class E2E_Flow {
             helper.addReportStep(link);
         } catch (Exception e) {
             System.out.println("Something went wrong in the script for Test: '" + method.getName() + "'");
+            e.printStackTrace();
         }
 
         helper.addPropertyForReporting("nvProfile", nvProfile);
@@ -167,7 +170,7 @@ public class E2E_Flow {
         try {
             helper.startGroupingOfSteps(method.getName());
 
-            helper.startCapturePerformanceMetrics(nvProfile, captureLevel);
+            helper.startCapturePerformanceMetrics(nvProfile, captureLevel, "com.experitest.ExperiBank");
 
             driver.findElement(By.name("Logout")).click();
             wait.until(ExpectedConditions.elementToBeClickable(By.name("usernameTextField")));
@@ -180,6 +183,7 @@ public class E2E_Flow {
             helper.addReportStep(link);
         } catch (Exception e) {
             System.out.println("Something went wrong in the script for Test: '" + method.getName() + "'");
+            e.printStackTrace();
         }
 
         helper.addPropertyForReporting("nvProfile", nvProfile);
@@ -192,7 +196,8 @@ public class E2E_Flow {
             String qaReleaseCycle = context.getCurrentXmlTest().getParameter("QA_Release_Cycle");
             driver.executeScript("seetest:client.addTestProperty(\"QA_Release_Cycle\", \"" + qaReleaseCycle + "\")");
         } catch (Exception e) {
-            System.out.println("Property or value not found, ignoring adding of Test Property using 'client.addTestProperty'");
+            System.out.println("WARNING - Property or value not found, ignoring adding of Test Property using 'client.addTestProperty'");
+            e.printStackTrace();
         }
 
         driver.quit();

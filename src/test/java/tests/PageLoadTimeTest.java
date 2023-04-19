@@ -2,7 +2,7 @@ package tests;
 
 import helpers.Helpers;
 import helpers.PropertiesReader;
-import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
@@ -10,13 +10,14 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.net.*;
+import java.util.ArrayList;
 
-public class LaunchApplicationTest {
+public class PageLoadTimeTest {
 
     protected IOSDriver<IOSElement> driver = null;
     protected DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
@@ -25,12 +26,6 @@ public class LaunchApplicationTest {
     protected Helpers helper;
 
     protected String speedIndex = null;
-    protected String cpuAvg = null;
-    protected String cpuMax = null;
-    protected String memAvg = null;
-    protected String memMax = null;
-    protected String batteryAvg = null;
-    protected String batteryMax = null;
 
     @BeforeMethod
     public void setUp(ITestContext context, Method method) throws MalformedURLException {
@@ -39,6 +34,7 @@ public class LaunchApplicationTest {
         desiredCapabilities.setCapability("testName", method.getName());
         desiredCapabilities.setCapability("accessKey", new PropertiesReader().getProperty("accessKey"));
         desiredCapabilities.setCapability("deviceQuery", deviceQuery);
+        desiredCapabilities.setCapability("bundleId", "com.levistrauss.customer");
         desiredCapabilities.setCapability("autoAcceptAlerts", true);
 
         driver = new IOSDriver<>(new URL(new PropertiesReader().getProperty("cloudUrl")), desiredCapabilities);
@@ -46,25 +42,46 @@ public class LaunchApplicationTest {
         helper = new Helpers(driver);
     }
 
+//    @Test
+//    public void launch_application_response_time(Method method) throws IOException, URISyntaxException {
+//        helper = new Helpers(driver);
+//        ArrayList<String> metrics = helper.extractHARFileMetrics("10832", method.getName());
+//        ArrayList<String> metrics = helper.extractHARFileMetrics("11031", method.getName());
+
+//        for (String metric : metrics) {
+//            System.out.println(metric);
+//        }
+//    }
+
+//    @Test
+//    public void testing_01() throws InterruptedException {
+//        wait.until(ExpectedConditions.elementToBeClickable(By.id("BottomTabs.Shop.ID")));
+//        driver.findElement(By.id("BottomTabs.Shop.ID")).click();
+//
+//        wait.until(ExpectedConditions.elementToBeClickable(By.id("Search.NewArrivals.ID")));
+//
+//        driver.findElement(By.id("Search.NewArrivals.ID")).click();
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='UIAScrollView']//*[@class='UIAImage'])[1]")));
+//    }
+
     @Test
     @Parameters({"nvProfile", "captureLevel"})
-    public void test_launch_of_application_response(String nvProfile, String captureLevel, @Optional Method method) {
+    public void new_arrivals_page_load_time(String nvProfile, String captureLevel, @Optional Method method) {
 
         try {
             // Start a group that will contain the individual test steps until 'endGroupingOfSteps' is called
-            helper.startGroupingOfSteps(method.getName());
+            helper.startGroupingOfSteps(method.getName() + "_functional_steps");
 
-            // Install the Application only
-            driver.executeScript("seetest:client.install(\"cloud:com.experitest.ExperiBank\", \"false\", \"false\")");
+            // Functional Steps to get to the point before I want to start capturing the Performance Transaction
+            wait.until(ExpectedConditions.elementToBeClickable(By.id("BottomTabs.Shop.ID")));
+            driver.findElement(By.id("BottomTabs.Shop.ID")).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.id("Search.NewArrivals.ID")));
 
             // Start Performance Transaction Capturing
-            helper.startCapturePerformanceMetrics(nvProfile, captureLevel, "com.experitest.ExperiBank");
+            helper.startCapturePerformanceMetrics(nvProfile, captureLevel, "com.levistrauss.customer");
 
-            // Click on the EriBank icon on the Device Home Page
-            driver.findElement(By.xpath("//XCUIElementTypeIcon[@name='SeeTestDemoApp']")).click();
-
-            // Verify user landed on the Login page
-            wait.until(ExpectedConditions.elementToBeClickable(By.name("usernameTextField")));
+            driver.findElement(By.id("Search.NewArrivals.ID")).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='UIAScrollView']//*[@class='UIAImage'])[1]")));
 
             // End the Performance Transaction Capturing
             String response = helper.endCapturePerformanceMetrics(method.getName());
@@ -74,7 +91,6 @@ public class LaunchApplicationTest {
 
             // Extract relevant properties from the Performance Transaction Response
             String link = helper.getPropertyFromPerformanceTransactionReport(response, "link");
-            // Extract relevant properties from the Performance Transaction Response
             String transactionId = helper.getPropertyFromPerformanceTransactionReport(response, "transactionId");
 
             // Waiting few seconds to allow next API call to have some time for the data to accumulate after Transaction ends
@@ -82,34 +98,39 @@ public class LaunchApplicationTest {
 
             // Extract relevant properties from the Performance Transaction API Response
             speedIndex = helper.getPropertyFromPerformanceTransactionAPI(transactionId, "speedIndex");
-            cpuAvg = helper.getPropertyFromPerformanceTransactionAPI(transactionId, "cpuAvg");
-            cpuMax = helper.getPropertyFromPerformanceTransactionAPI(transactionId, "cpuMax");
-            memAvg = helper.getPropertyFromPerformanceTransactionAPI(transactionId, "memAvg");
-            memMax = helper.getPropertyFromPerformanceTransactionAPI(transactionId, "memMax");
-            batteryAvg = helper.getPropertyFromPerformanceTransactionAPI(transactionId, "batteryAvg");
-            batteryMax = helper.getPropertyFromPerformanceTransactionAPI(transactionId, "batteryMax");
 
             // Add a custom step to the Automated Test Results with a link reference to the Performance Transaction Report
             helper.addReportStep(link);
             helper.addReportStep("Total Time to Launch & Load Application in ms: " + speedIndex);
+
+            // Get Network related Metrics
+            ArrayList<String> metrics = helper.extractHARFileMetrics(transactionId, method.getName());
+
+            // Add Network related Metrics to Functional Test Report
+            for (String metric : metrics) {
+                System.out.println(metric);
+                helper.addReportStep(metric);
+            }
+
         } catch (Exception e) {
             System.out.println("Something went wrong in the script for Test: '" + method.getName() + "'");
+            e.printStackTrace();
         }
 
         // Add custom properties that allow for easier filtering for the Automated Test Results
         helper.addPropertyForReporting("nvProfile", nvProfile);
         helper.addPropertyForReporting("captureLevel", captureLevel);
-        helper.addPropertyForReporting("speedIndex", speedIndex);
-        helper.addPropertyForReporting("cpuAvg", cpuAvg);
-        helper.addPropertyForReporting("cpuMax", cpuMax);
-        helper.addPropertyForReporting("memAvg", memAvg);
-        helper.addPropertyForReporting("memMax", memMax);
-        helper.addPropertyForReporting("batteryAvg", batteryAvg);
-        helper.addPropertyForReporting("batteryMax", batteryMax);
+
     }
 
     @AfterMethod(alwaysRun = true)
-    public void tearDown() {
+    public void tearDown(ITestResult result) {
+        if (!result.isSuccess()) {
+            driver.executeScript("seetest:client.setReportStatus(\"Failed\",\"Test Failed\")");
+        } else {
+            driver.executeScript("seetest:client.setReportStatus(\"Passed\",\"Test Passed\")");
+        }
+
         driver.quit();
     }
 

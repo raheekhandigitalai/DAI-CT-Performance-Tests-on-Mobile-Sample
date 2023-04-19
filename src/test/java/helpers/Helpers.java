@@ -4,7 +4,24 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import io.appium.java_client.AppiumDriver;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 
 public class Helpers {
 
@@ -14,25 +31,25 @@ public class Helpers {
         this.driver = driver;
     }
 
-    public void startCapturePerformanceMetricsBrowser(String nvProfile, String captureLevel) {
-        try {
-            if (captureLevel.equalsIgnoreCase("Device")) {
-                driver.executeScript("seetest:client.startPerformanceTransaction(\"" + nvProfile + "\")");
-            } else if (captureLevel.equalsIgnoreCase("Application")) {
-                driver.executeScript("seetest:client.startPerformanceTransactionForApplication(\"com.apple.mobilesafari\", \"" + nvProfile + "\")");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Could not start Capturing. Accepted Values: [Device, Application]");
-        }
-    }
+//    public void startCapturePerformanceMetricsBrowser(String nvProfile, String captureLevel) {
+//        try {
+//            if (captureLevel.equalsIgnoreCase("Device")) {
+//                driver.executeScript("seetest:client.startPerformanceTransaction(\"" + nvProfile + "\")");
+//            } else if (captureLevel.equalsIgnoreCase("Application")) {
+//                driver.executeScript("seetest:client.startPerformanceTransactionForApplication(\"com.apple.mobilesafari\", \"" + nvProfile + "\")");
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            System.out.println("Could not start Capturing. Accepted Values: [Device, Application]");
+//        }
+//    }
 
-    public void startCapturePerformanceMetrics(String nvProfile, String captureLevel) {
+    public void startCapturePerformanceMetrics(String nvProfile, String captureLevel, String applicationName) {
         try {
             if (captureLevel.equalsIgnoreCase("Device")) {
                 driver.executeScript("seetest:client.startPerformanceTransaction(\"" + nvProfile + "\")");
             } else if (captureLevel.equalsIgnoreCase("Application")) {
-                driver.executeScript("seetest:client.startPerformanceTransactionForApplication(\"com.experitest.ExperiBank\", \"" + nvProfile + "\")");
+                driver.executeScript("seetest:client.startPerformanceTransactionForApplication(\"" + applicationName + "\", \"" + nvProfile + "\")");
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -58,7 +75,7 @@ public class Helpers {
     // Properties that can be fetched:
     // networkProfile / cpuAvg / cpuMax / memAvg / memMax / batteryAvg / batteryMax / duration / speedIndex
     public String getPropertyFromPerformanceTransactionAPI(String transactionId, String property) throws UnirestException {
-        HttpResponse<String> response = Unirest.get("https://uscloud.experitest.com/reporter/api/transactions/" + transactionId)
+        HttpResponse<String> response = Unirest.get(new PropertiesReader().getProperty("urlForAPIs") + "/reporter/api/transactions/" + transactionId)
                 .header("Authorization", "Bearer " + new PropertiesReader().getProperty("accessKey"))
                 .asString();
 
@@ -71,6 +88,92 @@ public class Helpers {
             property = jsonObject.get(property).toString();
         }
         return property;
+    }
+
+    // This method helps to extract metrics from the HAR file, which can help us understand various metrics
+    // such as "How many network calls were made during the Transaction".
+    // This method can be expanded further with parameterization to retrieve other metrics
+    public ArrayList<String> extractHARFileMetrics(String transactionId, String fileName) throws IOException, URISyntaxException {
+        // Getting .json file from local directory
+        File jsonFile = downloadHARFileFromPerformanceTransaction(transactionId, fileName + "_" + getCurrentDateAndTime());
+
+        ArrayList<String> metrics = new ArrayList<>();
+        int numberOfNetworkCalls = 0;
+        double totalTimeTakenForNetworkCallsInSeconds = 0;
+
+        try {
+            String json = new String(Files.readAllBytes(Paths.get(String.valueOf(jsonFile))), StandardCharsets.UTF_8);
+
+            // Gets "entries" array from .json file, since information like request time is contained within "entries"
+            JSONObject jsonObj = new JSONObject(json);
+            JSONArray entriesArr = jsonObj.getJSONObject("log").getJSONArray("entries");
+            numberOfNetworkCalls = entriesArr.length();
+
+            long totalTimeMs = 0;
+
+            // Finds all the "time" objects from "entries"
+            for (int i = 0; i < numberOfNetworkCalls; i++) {
+                JSONObject entryObj = entriesArr.getJSONObject(i);
+                long time = entryObj.getLong("time");
+                totalTimeMs += time;
+            }
+
+            // Since "time" object is in Milliseconds, converting the total value accumulated to Seconds
+            totalTimeTakenForNetworkCallsInSeconds = (double) totalTimeMs / 1000;
+
+            metrics.add("Number of Network Calls made: " + numberOfNetworkCalls);
+            metrics.add("Total time taken for all Network Calls in Seconds: " + totalTimeTakenForNetworkCallsInSeconds);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return metrics;
+    }
+
+    // Due to a bug, the code logic is written to download the file, rename it to .zip, and then extract the file to .json
+    // Normally the API should download a .json file directly, but waiting on Bug Fix (March 14, 2023 as of writing)
+    public File downloadHARFileFromPerformanceTransaction(String transactionId, String fileName) throws IOException, URISyntaxException {
+
+        // Calls API to get HAR file
+        URI uri = new URIBuilder(new PropertiesReader().getProperty("urlForAPIs") + "/reporter/api/transactions/" + transactionId + "/har")
+                .setParameter("token", new PropertiesReader().getProperty("accessKey"))
+                .build();
+
+        HttpClient httpClient = HttpClientBuilder.create().build();
+        HttpGet httpGet = new HttpGet(uri);
+        org.apache.http.HttpResponse response = httpClient.execute(httpGet);
+
+        // HAR file is saved to local folder
+        File harFile = new File(System.getProperty("user.dir") + "/har_files/" + fileName + ".har");
+        FileOutputStream outputStream = new FileOutputStream(harFile);
+        response.getEntity().writeTo(outputStream);
+        outputStream.close();
+
+        // File is renamed to .zip (Due to bug, read above description)
+        File zipFile = new File(System.getProperty("user.dir") + "/har_files/" + fileName + ".zip");
+        harFile.renameTo(zipFile);
+
+        File outputFile = null;
+
+        // Extracting .zip into .json file and deleting .zip file
+        try (FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/har_files/" + fileName + ".zip");
+             ZipInputStream zis = new ZipInputStream(fis)) {
+            ZipEntry entry = zis.getNextEntry();
+            if (entry != null) {
+//                String jsonFileName = entry.getName();
+                outputFile = new File(System.getProperty("user.dir") + "/har_files/", fileName + ".json");
+                System.out.println(outputFile);
+                try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(outputFile))) {
+                    byte[] buffer = new byte[1024];
+                    int len;
+                    while ((len = zis.read(buffer)) > 0) {
+                        bos.write(buffer, 0, len);
+                    }
+                }
+            }
+        }
+        zipFile.delete();
+        return outputFile;
     }
 
     public void setReportStatus(String status, String message) {
@@ -95,6 +198,13 @@ public class Helpers {
 
     public void endGroupingOfSteps() {
         driver.executeScript("seetest:client.stopStepsGroup()");
+    }
+
+    public String getCurrentDateAndTime() {
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH:mm:ss");
+        String currentDateAndTime = now.format(formatter);
+        return currentDateAndTime;
     }
 
 }

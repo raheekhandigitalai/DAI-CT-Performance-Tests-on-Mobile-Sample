@@ -1,0 +1,4204 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "Experitest HAR",
+      "version": "0.1",
+      "comment": "mitmproxy version mitmproxy 4.0.4"
+    },
+    "entries": [
+      {
+        "startedDateTime": "2023-04-14T18:11:45.167741+00:00",
+        "time": 654,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "14260684431253740963"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https:"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 688,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "650"
+            }
+          ],
+          "content": {
+            "size": 650,
+            "compression": 197,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 650
+        },
+        "cache": {},
+        "timings": {
+          "send": 106,
+          "receive": 4,
+          "wait": 152,
+          "connect": 118,
+          "ssl": 274
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.151669+00:00",
+        "time": 308,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=http&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "17582395188154397429"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "http"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 688,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "645"
+            }
+          ],
+          "content": {
+            "size": 645,
+            "compression": 194,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 645
+        },
+        "cache": {},
+        "timings": {
+          "send": 109,
+          "receive": 27,
+          "wait": 172,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.178456+00:00",
+        "time": 311,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2F&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "14880893817122534875"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 688,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "609"
+            }
+          ],
+          "content": {
+            "size": 609,
+            "compression": 185,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 609
+        },
+        "cache": {},
+        "timings": {
+          "send": 107,
+          "receive": 6,
+          "wait": 198,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.161604+00:00",
+        "time": 349,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "15958020860020132627"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 688,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "645"
+            }
+          ],
+          "content": {
+            "size": 645,
+            "compression": 200,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 645
+        },
+        "cache": {},
+        "timings": {
+          "send": 116,
+          "receive": 9,
+          "wait": 224,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.197752+00:00",
+        "time": 313,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgi&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "13023953055034236179"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://gi"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 688,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "605"
+            }
+          ],
+          "content": {
+            "size": 605,
+            "compression": 193,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 605
+        },
+        "cache": {},
+        "timings": {
+          "send": 111,
+          "receive": 20,
+          "wait": 182,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.173774+00:00",
+        "time": 373,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "1921361225520105935"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https:/"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "650"
+            }
+          ],
+          "content": {
+            "size": 650,
+            "compression": 203,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 650
+        },
+        "cache": {},
+        "timings": {
+          "send": 113,
+          "receive": 5,
+          "wait": 255,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.147511+00:00",
+        "time": 416,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405626%2C-121.916436&locale=en_US&q=htt&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "4879051363605012925"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405626,-121.916436"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "htt"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "645"
+            }
+          ],
+          "content": {
+            "size": 645,
+            "compression": 192,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 645
+        },
+        "cache": {},
+        "timings": {
+          "send": 108,
+          "receive": 114,
+          "wait": 194,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.218051+00:00",
+        "time": 350,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithu&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "13865396292339326710"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://githu"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 688,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "609"
+            }
+          ],
+          "content": {
+            "size": 609,
+            "compression": 199,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 609
+        },
+        "cache": {},
+        "timings": {
+          "send": 109,
+          "receive": 11,
+          "wait": 230,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.189558+00:00",
+        "time": 392,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fg&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "1989232914334748606"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://g"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "603"
+            }
+          ],
+          "content": {
+            "size": 603,
+            "compression": 193,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 603
+        },
+        "cache": {},
+        "timings": {
+          "send": 111,
+          "receive": 19,
+          "wait": 262,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.209196+00:00",
+        "time": 373,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgith&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "7413854419387948342"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://gith"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "607"
+            }
+          ],
+          "content": {
+            "size": 607,
+            "compression": 199,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 607
+        },
+        "cache": {},
+        "timings": {
+          "send": 107,
+          "receive": 107,
+          "wait": 159,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.204827+00:00",
+        "time": 424,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgit&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "10883057046785533907"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://git"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 688,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "612"
+            }
+          ],
+          "content": {
+            "size": 612,
+            "compression": 192,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 612
+        },
+        "cache": {},
+        "timings": {
+          "send": 109,
+          "receive": 40,
+          "wait": 275,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.223433+00:00",
+        "time": 420,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "3048674212268984987"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "622"
+            }
+          ],
+          "content": {
+            "size": 622,
+            "compression": 192,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 622
+        },
+        "cache": {},
+        "timings": {
+          "send": 118,
+          "receive": 33,
+          "wait": 269,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.229027+00:00",
+        "time": 420,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub.&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "299630599975960341"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github."
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 686,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "613"
+            }
+          ],
+          "content": {
+            "size": 613,
+            "compression": 203,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 613
+        },
+        "cache": {},
+        "timings": {
+          "send": 117,
+          "receive": 26,
+          "wait": 277,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.247999+00:00",
+        "time": 407,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub.com&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "18143633988431172664"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github.com"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 688,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "620"
+            }
+          ],
+          "content": {
+            "size": 620,
+            "compression": 206,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 620
+        },
+        "cache": {},
+        "timings": {
+          "send": 115,
+          "receive": 47,
+          "wait": 245,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.236902+00:00",
+        "time": 427,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub.c&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "15398963781986712671"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github.c"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 688,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "616"
+            }
+          ],
+          "content": {
+            "size": 616,
+            "compression": 202,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 616
+        },
+        "cache": {},
+        "timings": {
+          "send": 115,
+          "receive": 28,
+          "wait": 284,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.253922+00:00",
+        "time": 410,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub.com%2F&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "7393626391988055679"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github.com/"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "621"
+            }
+          ],
+          "content": {
+            "size": 621,
+            "compression": 207,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 621
+        },
+        "cache": {},
+        "timings": {
+          "send": 119,
+          "receive": 32,
+          "wait": 259,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.273968+00:00",
+        "time": 405,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub.com%2Fl&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "5765182650692428624"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github.com/l"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "631"
+            }
+          ],
+          "content": {
+            "size": 631,
+            "compression": 203,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 631
+        },
+        "cache": {},
+        "timings": {
+          "send": 137,
+          "receive": 35,
+          "wait": 233,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.241944+00:00",
+        "time": 513,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub.co&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "6393599903130660742"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github.co"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "628"
+            }
+          ],
+          "content": {
+            "size": 628,
+            "compression": 196,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 628
+        },
+        "cache": {},
+        "timings": {
+          "send": 125,
+          "receive": 66,
+          "wait": 322,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.285892+00:00",
+        "time": 471,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub.com%2Flo&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "9968503341955632701"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github.com/lo"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "628"
+            }
+          ],
+          "content": {
+            "size": 628,
+            "compression": 208,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 628
+        },
+        "cache": {},
+        "timings": {
+          "send": 124,
+          "receive": 55,
+          "wait": 292,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.326412+00:00",
+        "time": 437,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub.com%2Flogi&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "17366695187971932594"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github.com/logi"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 688,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "636"
+            }
+          ],
+          "content": {
+            "size": 636,
+            "compression": 208,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 636
+        },
+        "cache": {},
+        "timings": {
+          "send": 118,
+          "receive": 44,
+          "wait": 275,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.340083+00:00",
+        "time": 425,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub.com%2Flogin&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "4377910425843964908"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github.com/login"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "630"
+            }
+          ],
+          "content": {
+            "size": 630,
+            "compression": 216,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 630
+        },
+        "cache": {},
+        "timings": {
+          "send": 125,
+          "receive": 41,
+          "wait": 259,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      },
+      {
+        "startedDateTime": "2023-04-14T18:11:45.292494+00:00",
+        "time": 472,
+        "request": {
+          "method": "GET",
+          "url": "https://api-glb-ausw2b.smoot.apple.com/search?alwaysSendTophit=off&calendar=Gregorian%20Calendar&card=1&cc=US&esl=en&geosrc=wifi%2C35.000000&kb_ime=en_US%40sw%3DQWERTY%3Bhw%3DAutomatic&key=kakapo4145&latlng=37.405620%2C-121.916406&locale=en_US&q=https%3A%2F%2Fgithub.com%2Flog&rm=1&storefront=143441-1%2C29&time_zone=America%2FLos_Angeles&tm=2&units=US",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api-glb-ausw2b.smoot.apple.com"
+            },
+            {
+              "name": "x-apple-geometadata",
+              "value": "SgBQAYABA5gBAKIGByoFCIdQEAA="
+            },
+            {
+              "name": "x-apple-languages",
+              "value": "[\"en-US\"]"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "x-apple-whitelisted-app-signature",
+              "value": "Oq+foYK9ABqCJRapAA4CAAEAAQEKAAMAB6kAAKqo"
+            },
+            {
+              "name": "x-apple-subscriptions",
+              "value": "[]"
+            },
+            {
+              "name": "x-apple-requestid",
+              "value": "4173612064738247879"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-apple-trial-namespace-id",
+              "value": "SAFARI_SEARCH_RANKING"
+            },
+            {
+              "name": "x-apple-userguid",
+              "value": "689F19BA-7D4A-4230-980A-DF1FE9A40F62"
+            },
+            {
+              "name": "user-agent",
+              "value": "parsecd/1.0 (iPhone14,2; iPhone OS 15.1 19B74) Safari/1"
+            },
+            {
+              "name": "x-apple-seed",
+              "value": "82"
+            },
+            {
+              "name": "x-apple-ui-scale",
+              "value": "3.0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "alwaysSendTophit",
+              "value": "off"
+            },
+            {
+              "name": "calendar",
+              "value": "Gregorian Calendar"
+            },
+            {
+              "name": "card",
+              "value": "1"
+            },
+            {
+              "name": "cc",
+              "value": "US"
+            },
+            {
+              "name": "esl",
+              "value": "en"
+            },
+            {
+              "name": "geosrc",
+              "value": "wifi,35.000000"
+            },
+            {
+              "name": "kb_ime",
+              "value": "en_US@sw=QWERTY;hw=Automatic"
+            },
+            {
+              "name": "key",
+              "value": "kakapo4145"
+            },
+            {
+              "name": "latlng",
+              "value": "37.405620,-121.916406"
+            },
+            {
+              "name": "locale",
+              "value": "en_US"
+            },
+            {
+              "name": "q",
+              "value": "https://github.com/log"
+            },
+            {
+              "name": "rm",
+              "value": "1"
+            },
+            {
+              "name": "storefront",
+              "value": "143441-1,29"
+            },
+            {
+              "name": "time_zone",
+              "value": "America/Los_Angeles"
+            },
+            {
+              "name": "tm",
+              "value": "2"
+            },
+            {
+              "name": "units",
+              "value": "US"
+            }
+          ],
+          "headersSize": 687,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "content-encoding",
+              "value": "deflate"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "date",
+              "value": "Fri, 14 Apr 2023 18:11:45 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-edge",
+              "value": "ausw2b"
+            },
+            {
+              "name": "content-length",
+              "value": "633"
+            }
+          ],
+          "content": {
+            "size": 633,
+            "compression": 205,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 279,
+          "bodySize": 633
+        },
+        "cache": {},
+        "timings": {
+          "send": 128,
+          "receive": 47,
+          "wait": 297,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "44.235.85.225",
+        "connection": "a86e4cb5-99e4-4361-8815-c909261c03a9"
+      }
+    ],
+    "_websocketStart": [
+
+    ],
+    "_websocketEnd": [
+
+    ],
+    "_websocketMsg": [
+
+    ],
+    "_errorEntries": [
+
+    ]
+  }
+}

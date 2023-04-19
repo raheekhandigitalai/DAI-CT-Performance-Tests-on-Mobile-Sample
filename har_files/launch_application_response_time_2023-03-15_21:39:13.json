@@ -1,0 +1,1882 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "Experitest HAR",
+      "version": "0.1",
+      "comment": "mitmproxy version mitmproxy 4.0.4"
+    },
+    "entries": [
+      {
+        "startedDateTime": "2023-01-24T19:37:03.298815+00:00",
+        "time": 423,
+        "request": {
+          "method": "GET",
+          "url": "https://match.prod.bidr.io/cookie-sync/demandbase",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "match.prod.bidr.io"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-us"
+            },
+            {
+              "name": "Referer",
+              "value": "https://digital.ai/"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 434,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 303,
+          "statusText": "See Other",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [
+            {
+              "name": "checkForPermission",
+              "value": "ok",
+              "path": "/",
+              "domain": "bidr.io",
+              "httpOnly": false,
+              "secure": true,
+              "expires": "2023-01-24T19:47:03+00:00"
+            }
+          ],
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Tue, 24 Jan 2023 19:37:03 GMT"
+            },
+            {
+              "name": "location",
+              "value": "https://match.prod.bidr.io/cookie-sync/demandbase?_bee_ppp=1"
+            },
+            {
+              "name": "Server",
+              "value": "gunicorn"
+            },
+            {
+              "name": "set-cookie",
+              "value": "checkForPermission=ok; Domain=bidr.io; expires=Tue, 24 Jan 2023 19:47:03 GMT; Path=/; SameSite=None; Secure"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=2592000; includeSubDomains"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "content": {
+            "size": 0,
+            "compression": 0,
+            "mimeType": ""
+          },
+          "redirectURL": "https://match.prod.bidr.io/cookie-sync/demandbase?_bee_ppp=1",
+          "headersSize": 417,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "send": 7,
+          "receive": 6,
+          "wait": 114,
+          "connect": 84,
+          "ssl": 212
+        },
+        "serverIPAddress": "52.32.228.48",
+        "connection": "20400910-45b1-4203-b990-f467aed91503"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:03.401463+00:00",
+        "time": 582,
+        "request": {
+          "method": "POST",
+          "url": "https://981-lqx-968.mktoresp.com/webevents/clickLink?_mchNc=1674589022619&_mchHr=https%3A%2F%2Fdigital.ai%2Fwhy-digital-ai%2Fcontact%2F&_mchId=981-LQX-968&_mchTk=_mch-digital.ai-1674520181101-38200&_mchCn=&_mchHo=digital.ai&_mchPo=&_mchRu=%2F&_mchPc=https%3A&_mchVr=162&_mchEcid=&",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "981-lqx-968.mktoresp.com"
+            },
+            {
+              "name": "Origin",
+              "value": "https://digital.ai"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-us"
+            },
+            {
+              "name": "Referer",
+              "value": "https://digital.ai/"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "_mchNc",
+              "value": "1674589022619"
+            },
+            {
+              "name": "_mchHr",
+              "value": "https://digital.ai/why-digital-ai/contact/"
+            },
+            {
+              "name": "_mchId",
+              "value": "981-LQX-968"
+            },
+            {
+              "name": "_mchTk",
+              "value": "_mch-digital.ai-1674520181101-38200"
+            },
+            {
+              "name": "_mchCn",
+              "value": ""
+            },
+            {
+              "name": "_mchHo",
+              "value": "digital.ai"
+            },
+            {
+              "name": "_mchPo",
+              "value": ""
+            },
+            {
+              "name": "_mchRu",
+              "value": "/"
+            },
+            {
+              "name": "_mchPc",
+              "value": "https:"
+            },
+            {
+              "name": "_mchVr",
+              "value": "162"
+            },
+            {
+              "name": "_mchEcid",
+              "value": ""
+            }
+          ],
+          "headersSize": 468,
+          "bodySize": 0,
+          "postData": {
+            "mimeType": "",
+            "text": "",
+            "params": []
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Server",
+              "value": "nginx/1.20.1"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 24 Jan 2023 19:37:03 GMT"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/plain; charset=UTF-8"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "X-Request-Id",
+              "value": "4f51b1c9-f9c6-4bdb-a2da-027ee8b954c2"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "content": {
+            "size": 28,
+            "compression": -26,
+            "mimeType": "text/plain; charset=UTF-8"
+          },
+          "redirectURL": "",
+          "headersSize": 331,
+          "bodySize": 28
+        },
+        "cache": {},
+        "timings": {
+          "send": 9,
+          "receive": 5,
+          "wait": 132,
+          "connect": 154,
+          "ssl": 282
+        },
+        "serverIPAddress": "192.28.144.124",
+        "connection": "3af9f198-2b6f-421e-9bbc-e4a21446076f"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:04.598261+00:00",
+        "time": 147,
+        "request": {
+          "method": "POST",
+          "url": "https://981-lqx-968.mktoresp.com/webevents/visitWebPage?_mchNc=1674589024499&_mchCn=&_mchId=981-LQX-968&_mchTk=_mch-digital.ai-1674520181101-38200&_mchHo=digital.ai&_mchPo=&_mchRu=%2Fwhy-digital-ai%2Fcontact%2F&_mchPc=https%3A&_mchVr=162&_mchEcid=&_mchHa=&_mchRe=https%3A%2F%2Fdigital.ai%2F&_mchQp=",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "981-lqx-968.mktoresp.com"
+            },
+            {
+              "name": "Origin",
+              "value": "https://digital.ai"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-us"
+            },
+            {
+              "name": "Referer",
+              "value": "https://digital.ai/"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "_mchNc",
+              "value": "1674589024499"
+            },
+            {
+              "name": "_mchCn",
+              "value": ""
+            },
+            {
+              "name": "_mchId",
+              "value": "981-LQX-968"
+            },
+            {
+              "name": "_mchTk",
+              "value": "_mch-digital.ai-1674520181101-38200"
+            },
+            {
+              "name": "_mchHo",
+              "value": "digital.ai"
+            },
+            {
+              "name": "_mchPo",
+              "value": ""
+            },
+            {
+              "name": "_mchRu",
+              "value": "/why-digital-ai/contact/"
+            },
+            {
+              "name": "_mchPc",
+              "value": "https:"
+            },
+            {
+              "name": "_mchVr",
+              "value": "162"
+            },
+            {
+              "name": "_mchEcid",
+              "value": ""
+            },
+            {
+              "name": "_mchHa",
+              "value": ""
+            },
+            {
+              "name": "_mchRe",
+              "value": "https://digital.ai/"
+            },
+            {
+              "name": "_mchQp",
+              "value": ""
+            }
+          ],
+          "headersSize": 468,
+          "bodySize": 0,
+          "postData": {
+            "mimeType": "",
+            "text": "",
+            "params": []
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Server",
+              "value": "nginx/1.20.1"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 24 Jan 2023 19:37:04 GMT"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/plain; charset=UTF-8"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "X-Request-Id",
+              "value": "845f29de-fb85-48bf-8e9c-f167e189cb92"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "content": {
+            "size": 28,
+            "compression": -26,
+            "mimeType": "text/plain; charset=UTF-8"
+          },
+          "redirectURL": "",
+          "headersSize": 331,
+          "bodySize": 28
+        },
+        "cache": {},
+        "timings": {
+          "send": 13,
+          "receive": 5,
+          "wait": 129,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "192.28.144.124",
+        "connection": "3af9f198-2b6f-421e-9bbc-e4a21446076f"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:04.587432+00:00",
+        "time": 271,
+        "request": {
+          "method": "GET",
+          "url": "https://match.prod.bidr.io/cookie-sync/demandbase?_bee_ppp=1",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "match.prod.bidr.io"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-us"
+            },
+            {
+              "name": "Referer",
+              "value": "https://digital.ai/"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "_bee_ppp",
+              "value": "1"
+            }
+          ],
+          "headersSize": 434,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 303,
+          "statusText": "See Other",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Tue, 24 Jan 2023 19:37:04 GMT"
+            },
+            {
+              "name": "location",
+              "value": "https://segments.company-target.com/log?vendor=choca&user_id="
+            },
+            {
+              "name": "Server",
+              "value": "gunicorn"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=2592000; includeSubDomains"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "content": {
+            "size": 0,
+            "compression": 0,
+            "mimeType": ""
+          },
+          "redirectURL": "https://segments.company-target.com/log?vendor=choca&user_id=",
+          "headersSize": 289,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "send": 7,
+          "receive": 4,
+          "wait": 260,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "52.32.228.48",
+        "connection": "20400910-45b1-4203-b990-f467aed91503"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:04.728806+00:00",
+        "time": 447,
+        "request": {
+          "method": "POST",
+          "url": "https://bat.bing.com/actionp/0?ti=56313089&Ver=2&mid=4743c520-80f8-43de-a42b-46696e4c07ef&sid=25bd6be09b7e11edade003bea77cd458&vid=25bd49409b7e11ed9e15559e5236d42b&vids=0&msclkid=N&evt=pageHide",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "bat.bing.com"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "origin",
+              "value": "https://digital.ai"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-us"
+            },
+            {
+              "name": "referer",
+              "value": "https://digital.ai/"
+            },
+            {
+              "name": "cache-control",
+              "value": "max-age=0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "content-length",
+              "value": "0"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ti",
+              "value": "56313089"
+            },
+            {
+              "name": "Ver",
+              "value": "2"
+            },
+            {
+              "name": "mid",
+              "value": "4743c520-80f8-43de-a42b-46696e4c07ef"
+            },
+            {
+              "name": "sid",
+              "value": "25bd6be09b7e11edade003bea77cd458"
+            },
+            {
+              "name": "vid",
+              "value": "25bd49409b7e11ed9e15559e5236d42b"
+            },
+            {
+              "name": "vids",
+              "value": "0"
+            },
+            {
+              "name": "msclkid",
+              "value": "N"
+            },
+            {
+              "name": "evt",
+              "value": "pageHide"
+            }
+          ],
+          "headersSize": 430,
+          "bodySize": 0,
+          "postData": {
+            "mimeType": "",
+            "text": "",
+            "params": []
+          }
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "MUID",
+              "value": "0214D81CB8D868730426CABFB95C699B",
+              "path": "/",
+              "domain": ".bing.com",
+              "httpOnly": false,
+              "secure": true,
+              "expires": "2024-02-18T19:37:04+00:00"
+            },
+            {
+              "name": "MR",
+              "value": "0",
+              "path": "/",
+              "domain": "bat.bing.com",
+              "httpOnly": false,
+              "secure": true,
+              "expires": "2023-01-31T19:37:04+00:00"
+            }
+          ],
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "no-cache, must-revalidate"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "expires",
+              "value": "Fri, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "MUID=0214D81CB8D868730426CABFB95C699B; domain=.bing.com; expires=Sun, 18-Feb-2024 19:37:04 GMT; path=/; SameSite=None; Secure; Priority=High;, MR=0; domain=bat.bing.com; expires=Tue, 31-Jan-2023 19:37:04 GMT; path=/; SameSite=None; Secure;"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000; includeSubDomains; preload"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "x-cache",
+              "value": "CONFIG_NOCACHE"
+            },
+            {
+              "name": "accept-ch",
+              "value": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version"
+            },
+            {
+              "name": "x-msedge-ref",
+              "value": "Ref A: 3EDDB570D41E4F1CA81DC5BD66660264 Ref B: PAOEDGE0612 Ref C: 2023-01-24T19:37:04Z"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 24 Jan 2023 19:37:04 GMT"
+            }
+          ],
+          "content": {
+            "size": 0,
+            "compression": 0,
+            "mimeType": ""
+          },
+          "redirectURL": "",
+          "headersSize": 882,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "send": 105,
+          "receive": 4,
+          "wait": 97,
+          "connect": 63,
+          "ssl": 178
+        },
+        "serverIPAddress": "204.79.197.200",
+        "connection": "c6113211-8b40-4853-8018-54d12e499828"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:05.234469+00:00",
+        "time": 399,
+        "request": {
+          "method": "GET",
+          "url": "https://segments.company-target.com/log?vendor=liveramp&user_id=",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "segments.company-target.com"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-us"
+            },
+            {
+              "name": "Referer",
+              "value": "https://digital.ai/"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "vendor",
+              "value": "liveramp"
+            },
+            {
+              "name": "user_id",
+              "value": ""
+            }
+          ],
+          "headersSize": 443,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 303,
+          "statusText": "See Other",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [
+            {
+              "name": "tuuid",
+              "value": "b519943b-1d82-4807-90b3-245c03bc3c82",
+              "path": "/",
+              "domain": ".company-target.com",
+              "httpOnly": true,
+              "secure": true,
+              "expires": "2025-01-23T19:37:05+00:00"
+            },
+            {
+              "name": "tuuid_lu",
+              "value": "1674589025",
+              "path": "/",
+              "domain": ".company-target.com",
+              "httpOnly": true,
+              "secure": true,
+              "expires": "2025-01-23T19:37:05+00:00"
+            }
+          ],
+          "headers": [
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 24 Jan 2023 19:37:05 GMT"
+            },
+            {
+              "name": "trace-id",
+              "value": "aa301c4b9273f451"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "Location",
+              "value": "/validateCookie?vendor=liveramp&user_id=&verifyHash=65ba0a393ea246db0a341af67a9f2f3f2bf1e614"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "tuuid=b519943b-1d82-4807-90b3-245c03bc3c82; Max-Age=63072000; Expires=Thu, 23 Jan 2025 19:37:05 GMT; SameSite=None; Path=/; Domain=.company-target.com; Secure; HTTPOnly, tuuid_lu=1674589025; Max-Age=63072000; Expires=Thu, 23 Jan 2025 19:37:05 GMT; SameSite=None; Path=/; Domain=.company-target.com; Secure; HTTPOnly"
+            },
+            {
+              "name": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 34d694cee116d42560f77448eb932ac8.cloudfront.net (CloudFront)"
+            },
+            {
+              "name": "X-Amz-Cf-Pop",
+              "value": "SFO20-C1"
+            },
+            {
+              "name": "X-Amz-Cf-Id",
+              "value": "2U0PqStt4fUlvTOoaj51DOHC3jzcBaWqWIcgqge7yT0w--B1IMeZrg=="
+            }
+          ],
+          "content": {
+            "size": 0,
+            "compression": 0,
+            "mimeType": ""
+          },
+          "redirectURL": "/validateCookie?vendor=liveramp&user_id=&verifyHash=65ba0a393ea246db0a341af67a9f2f3f2bf1e614",
+          "headersSize": 867,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "send": 4,
+          "receive": 12,
+          "wait": 127,
+          "connect": 63,
+          "ssl": 193
+        },
+        "serverIPAddress": "13.227.74.9",
+        "connection": "61d81561-a7df-47c5-9986-cc6f78a03f68"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:05.443584+00:00",
+        "time": 401,
+        "request": {
+          "method": "GET",
+          "url": "https://segments.company-target.com/log?vendor=choca&user_id=",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "segments.company-target.com"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-us"
+            },
+            {
+              "name": "Referer",
+              "value": "https://digital.ai/"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "vendor",
+              "value": "choca"
+            },
+            {
+              "name": "user_id",
+              "value": ""
+            }
+          ],
+          "headersSize": 443,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 303,
+          "statusText": "See Other",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [
+            {
+              "name": "tuuid",
+              "value": "e0398a5e-fe47-4ec7-87b4-ad3ec0b1cc6f",
+              "path": "/",
+              "domain": ".company-target.com",
+              "httpOnly": true,
+              "secure": true,
+              "expires": "2025-01-23T19:37:05+00:00"
+            },
+            {
+              "name": "tuuid_lu",
+              "value": "1674589025",
+              "path": "/",
+              "domain": ".company-target.com",
+              "httpOnly": true,
+              "secure": true,
+              "expires": "2025-01-23T19:37:05+00:00"
+            }
+          ],
+          "headers": [
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 24 Jan 2023 19:37:05 GMT"
+            },
+            {
+              "name": "trace-id",
+              "value": "94b1238e5dc7ceef"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "Location",
+              "value": "/validateCookie?vendor=choca&user_id=&verifyHash=c5c411cd23c87da92d13203439023e9b5a1bb5e5"
+            },
+            {
+              "name": "Set-Cookie",
+              "value": "tuuid=e0398a5e-fe47-4ec7-87b4-ad3ec0b1cc6f; Max-Age=63072000; Expires=Thu, 23 Jan 2025 19:37:05 GMT; SameSite=None; Path=/; Domain=.company-target.com; Secure; HTTPOnly, tuuid_lu=1674589025; Max-Age=63072000; Expires=Thu, 23 Jan 2025 19:37:05 GMT; SameSite=None; Path=/; Domain=.company-target.com; Secure; HTTPOnly"
+            },
+            {
+              "name": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 cfa15842f57761e1aba6ea8338d380d4.cloudfront.net (CloudFront)"
+            },
+            {
+              "name": "X-Amz-Cf-Pop",
+              "value": "SFO20-C1"
+            },
+            {
+              "name": "X-Amz-Cf-Id",
+              "value": "HAMBsyHW7hBSr7hJG9wkh54BPSHuJfzuP7EAnV40uyX2csnohDuX5g=="
+            }
+          ],
+          "content": {
+            "size": 0,
+            "compression": 0,
+            "mimeType": ""
+          },
+          "redirectURL": "/validateCookie?vendor=choca&user_id=&verifyHash=c5c411cd23c87da92d13203439023e9b5a1bb5e5",
+          "headersSize": 864,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "send": 7,
+          "receive": 11,
+          "wait": 126,
+          "connect": 99,
+          "ssl": 158
+        },
+        "serverIPAddress": "13.227.74.9",
+        "connection": "e4adef69-6af1-43f8-a463-a0ba38e643bc"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:05.456919+00:00",
+        "time": 145,
+        "request": {
+          "method": "GET",
+          "url": "https://segments.company-target.com/validateCookie?vendor=liveramp&user_id=&verifyHash=65ba0a393ea246db0a341af67a9f2f3f2bf1e614",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "segments.company-target.com"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-us"
+            },
+            {
+              "name": "Referer",
+              "value": "https://digital.ai/"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "vendor",
+              "value": "liveramp"
+            },
+            {
+              "name": "user_id",
+              "value": ""
+            },
+            {
+              "name": "verifyHash",
+              "value": "65ba0a393ea246db0a341af67a9f2f3f2bf1e614"
+            }
+          ],
+          "headersSize": 443,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 204,
+          "statusText": "No Content",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 24 Jan 2023 19:37:05 GMT"
+            },
+            {
+              "name": "trace-id",
+              "value": "1aee3a54e7dcc947"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 34d694cee116d42560f77448eb932ac8.cloudfront.net (CloudFront)"
+            },
+            {
+              "name": "X-Amz-Cf-Pop",
+              "value": "SFO20-C1"
+            },
+            {
+              "name": "X-Amz-Cf-Id",
+              "value": "06quFy-osOKxLgSXTNIgwS4hDHOhjuAEw2-6d8bWdmsVra05mMjW-A=="
+            }
+          ],
+          "content": {
+            "size": 0,
+            "compression": 0,
+            "mimeType": ""
+          },
+          "redirectURL": "",
+          "headersSize": 371,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "send": 8,
+          "receive": 8,
+          "wait": 129,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "13.227.74.9",
+        "connection": "61d81561-a7df-47c5-9986-cc6f78a03f68"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:04.796558+00:00",
+        "time": 1074,
+        "request": {
+          "method": "GET",
+          "url": "https://info.digital.ai/index.php/form/getForm?munchkinId=981-LQX-968&form=6249&url=https%3A%2F%2Fdigital.ai%2Fwhy-digital-ai%2Fcontact%2F&callback=jQuery112405843201077353531_1674589024194&_=1674589024195",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "_ga_F4J6R4796Z",
+              "value": "GS1.1.1674587358.2.1.1674589024.0.0.0",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.11124477.1674520162",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_gid",
+              "value": "GA1.2.858565639.1674520163",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_biz_pendingA",
+              "value": "%5B%5D",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "OptanonConsent",
+              "value": "isIABGlobal=false&datestamp=Tue+Jan+24+2023+14%3A36%3A13+GMT-0500+(EST)&version=6.4.0&hosts=&landingPath=NotLandingPage&groups=C0003%3A1%2CC0002%3A1%2CC0001%3A1%2CC0004%3A1&geolocation=US%3BUT&AwaitingReconsent=false",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_biz_nA",
+              "value": "14",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_biz_sid",
+              "value": "754088",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_biz_uid",
+              "value": "3ac5e05d9aa94bab9d71c611d3286472",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_dc_gtm_UA-163223026-1",
+              "value": "1",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_mkto_trk",
+              "value": "id:981-LQX-968&token:_mch-digital.ai-1674520181101-38200",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_uetsid",
+              "value": "25bd6be09b7e11edade003bea77cd458",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_uetvid",
+              "value": "25bd49409b7e11ed9e15559e5236d42b",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "BIGipServerab06web-nginx-app_https",
+              "value": "!PYPoghQvh1yVL8fn/+ZT2Dlakae2CzZHLfHIuhH335lSZLdTiGdFexTRMd1c8Gxnf0qERxtm3VPo79s=",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "__cf_bm",
+              "value": "kWtMNRUH.Uef5HGZS5ZULF26hf03xVvcxQx1YM0WXwk-1674588399-0-AdW36ssm1sh9FnZ0QUURdBzfAGJcMVytGh7sgz0/J5M7DUmkdFKmx9g1vC0L3urou8unxb1pMgHAvoTvY3alWqI=",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_biz_flagsA",
+              "value": "%7B%22Version%22%3A1%2C%22ViewThrough%22%3A%221%22%2C%22XDomain%22%3A%221%22%2C%22Mkto%22%3A%221%22%7D",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_mkto_trk_http",
+              "value": "id:981-LQX-968&token:_mch-digital.ai-1674520181101-38200",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "OptanonAlertBoxClosed",
+              "value": "2023-01-24T00:29:24.329Z",
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_gcl_au",
+              "value": "1.1.1991961433.1674520161",
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "info.digital.ai"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-us"
+            },
+            {
+              "name": "referer",
+              "value": "https://digital.ai/why-digital-ai/contact/"
+            },
+            {
+              "name": "cookie",
+              "value": "_ga_F4J6R4796Z=GS1.1.1674587358.2.1.1674589024.0.0.0; _ga=GA1.2.11124477.1674520162; _gid=GA1.2.858565639.1674520163; _biz_pendingA=%5B%5D; OptanonConsent=isIABGlobal=false&datestamp=Tue+Jan+24+2023+14%3A36%3A13+GMT-0500+(EST)&version=6.4.0&hosts=&landingPath=NotLandingPage&groups=C0003%3A1%2CC0002%3A1%2CC0001%3A1%2CC0004%3A1&geolocation=US%3BUT&AwaitingReconsent=false; _biz_nA=14; _biz_sid=754088; _biz_uid=3ac5e05d9aa94bab9d71c611d3286472; _dc_gtm_UA-163223026-1=1; _mkto_trk=id:981-LQX-968&token:_mch-digital.ai-1674520181101-38200; _uetsid=25bd6be09b7e11edade003bea77cd458; _uetvid=25bd49409b7e11ed9e15559e5236d42b; BIGipServerab06web-nginx-app_https=!PYPoghQvh1yVL8fn/+ZT2Dlakae2CzZHLfHIuhH335lSZLdTiGdFexTRMd1c8Gxnf0qERxtm3VPo79s=; __cf_bm=kWtMNRUH.Uef5HGZS5ZULF26hf03xVvcxQx1YM0WXwk-1674588399-0-AdW36ssm1sh9FnZ0QUURdBzfAGJcMVytGh7sgz0/J5M7DUmkdFKmx9g1vC0L3urou8unxb1pMgHAvoTvY3alWqI=; _biz_flagsA=%7B%22Version%22%3A1%2C%22ViewThrough%22%3A%221%22%2C%22XDomain%22%3A%221%22%2C%22Mkto%22%3A%221%22%7D; _mkto_trk_http=id:981-LQX-968&token:_mch-digital.ai-1674520181101-38200; OptanonAlertBoxClosed=2023-01-24T00:29:24.329Z; _gcl_au=1.1.1991961433.1674520161"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "munchkinId",
+              "value": "981-LQX-968"
+            },
+            {
+              "name": "form",
+              "value": "6249"
+            },
+            {
+              "name": "url",
+              "value": "https://digital.ai/why-digital-ai/contact/"
+            },
+            {
+              "name": "callback",
+              "value": "jQuery112405843201077353531_1674589024194"
+            },
+            {
+              "name": "_",
+              "value": "1674589024195"
+            }
+          ],
+          "headersSize": 1543,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "BIGipServerab06web-nginx-app_https",
+              "value": "!b5ms80IQlHU5pGvn/+ZT2Dlakae2Cwe0govxCDjaYD+rnn7wiY5WVRd+BO8Zber1j1ng6KcY1SBDPqU=",
+              "path": "/",
+              "httpOnly": true,
+              "secure": true
+            }
+          ],
+          "headers": [
+            {
+              "name": "date",
+              "value": "Tue, 24 Jan 2023 19:37:05 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "cf-ray",
+              "value": "78eb38bdbee89663-SJC"
+            },
+            {
+              "name": "set-cookie",
+              "value": "BIGipServerab06web-nginx-app_https=!b5ms80IQlHU5pGvn/+ZT2Dlakae2Cwe0govxCDjaYD+rnn7wiY5WVRd+BO8Zber1j1ng6KcY1SBDPqU=; Path=/; Version=1; Secure; Httponly"
+            },
+            {
+              "name": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "name": "cached",
+              "value": "false"
+            },
+            {
+              "name": "x-form-service-request-id",
+              "value": "36a#185e548b384"
+            },
+            {
+              "name": "x-marketo-source",
+              "value": "Form Service"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            }
+          ],
+          "content": {
+            "size": 5382,
+            "compression": 20649,
+            "mimeType": "application/javascript; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 566,
+          "bodySize": 5382
+        },
+        "cache": {},
+        "timings": {
+          "send": 105,
+          "receive": 6,
+          "wait": 732,
+          "connect": 69,
+          "ssl": 162
+        },
+        "serverIPAddress": "104.17.73.206",
+        "connection": "34aa5547-be89-4ead-8a77-9f4cbbb66739"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:05.668597+00:00",
+        "time": 139,
+        "request": {
+          "method": "GET",
+          "url": "https://segments.company-target.com/validateCookie?vendor=choca&user_id=&verifyHash=c5c411cd23c87da92d13203439023e9b5a1bb5e5",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "segments.company-target.com"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept",
+              "value": "image/webp,image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-us"
+            },
+            {
+              "name": "Referer",
+              "value": "https://digital.ai/"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "vendor",
+              "value": "choca"
+            },
+            {
+              "name": "user_id",
+              "value": ""
+            },
+            {
+              "name": "verifyHash",
+              "value": "c5c411cd23c87da92d13203439023e9b5a1bb5e5"
+            }
+          ],
+          "headersSize": 443,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 204,
+          "statusText": "No Content",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 24 Jan 2023 19:37:05 GMT"
+            },
+            {
+              "name": "trace-id",
+              "value": "e13e05943bb98b04"
+            },
+            {
+              "name": "Vary",
+              "value": "Origin"
+            },
+            {
+              "name": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 cfa15842f57761e1aba6ea8338d380d4.cloudfront.net (CloudFront)"
+            },
+            {
+              "name": "X-Amz-Cf-Pop",
+              "value": "SFO20-C1"
+            },
+            {
+              "name": "X-Amz-Cf-Id",
+              "value": "24XltJeG-BDr6SB0c8_2IDR2swzR6ts8293VCgkYcqB9DqX-SQT2RQ=="
+            }
+          ],
+          "content": {
+            "size": 0,
+            "compression": 0,
+            "mimeType": ""
+          },
+          "redirectURL": "",
+          "headersSize": 371,
+          "bodySize": 0
+        },
+        "cache": {},
+        "timings": {
+          "send": 7,
+          "receive": 6,
+          "wait": 126,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "13.227.74.9",
+        "connection": "e4adef69-6af1-43f8-a463-a0ba38e643bc"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:06.359759+00:00",
+        "time": 486,
+        "request": {
+          "method": "GET",
+          "url": "https://info.collab.net/rs/981-LQX-968/images/digital-ai-formstyles.css",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "info.collab.net"
+            },
+            {
+              "name": "accept",
+              "value": "text/css,*/*;q=0.1"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "if-none-match",
+              "value": "\"162174-36b7-5f2f412402a88\""
+            },
+            {
+              "name": "if-modified-since",
+              "value": "Mon, 23 Jan 2023 20:16:15 GMT"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-us"
+            },
+            {
+              "name": "referer",
+              "value": "https://digital.ai/"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 461,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "__cf_bm",
+              "value": "gz68CWYW0Kgdc4pUgHq5a2ypT4Ge_ETQiR_qTKftOHg-1674589026-0-AT6toLVe3r9JotkW8V+tXg1HJslHgoSIYSV33VJ+FPBpas9X5NG5KE4ry2y7NuG46Bznv1uYGbsVbwDEf67hPgU=",
+              "path": "/",
+              "domain": ".info.collab.net",
+              "httpOnly": true,
+              "secure": true,
+              "expires": "2023-01-24T20:07:06+00:00"
+            }
+          ],
+          "headers": [
+            {
+              "name": "date",
+              "value": "Tue, 24 Jan 2023 19:37:06 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "text/css"
+            },
+            {
+              "name": "content-length",
+              "value": "2939"
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 23 Jan 2023 20:14:17 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "\"623e6-36b7-5f2f40b3aa53d\""
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "cf-cache-status",
+              "value": "EXPIRED"
+            },
+            {
+              "name": "expires",
+              "value": "Tue, 24 Jan 2023 19:38:06 GMT"
+            },
+            {
+              "name": "cache-control",
+              "value": "public, max-age=60"
+            },
+            {
+              "name": "accept-ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "set-cookie",
+              "value": "__cf_bm=gz68CWYW0Kgdc4pUgHq5a2ypT4Ge_ETQiR_qTKftOHg-1674589026-0-AT6toLVe3r9JotkW8V+tXg1HJslHgoSIYSV33VJ+FPBpas9X5NG5KE4ry2y7NuG46Bznv1uYGbsVbwDEf67hPgU=; path=/; expires=Tue, 24-Jan-23 20:07:06 GMT; domain=.info.collab.net; HttpOnly; Secure; SameSite=None"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "cf-ray",
+              "value": "78eb38c77f7dcf61-SJC"
+            }
+          ],
+          "content": {
+            "size": 2939,
+            "compression": 11068,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": 813,
+          "bodySize": 2939
+        },
+        "cache": {},
+        "timings": {
+          "send": 105,
+          "receive": 6,
+          "wait": 160,
+          "connect": 62,
+          "ssl": 153
+        },
+        "serverIPAddress": "104.17.72.206",
+        "connection": "49c9c457-071e-4958-8728-923cc50b81a4"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:06.849860+00:00",
+        "time": 278,
+        "request": {
+          "method": "GET",
+          "url": "https://info.collab.net/rs/981-LQX-968/images/gothambook-webfont.woff2",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "info.collab.net"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "if-none-match",
+              "value": "W/\"6427d-44c4-5f2bd606b43da\""
+            },
+            {
+              "name": "if-modified-since",
+              "value": "Sat, 21 Jan 2023 03:01:03 GMT"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-us"
+            },
+            {
+              "name": "referer",
+              "value": "https://digital.ai/"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 447,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "__cf_bm",
+              "value": "jPI_yyxvvhimxYECCMTSlDqTEPRPqE2aqkw4izQas0c-1674589027-0-AWNRFDphyoHuN2jTptnuwvvpIDLjyl/m10yQODvwYUCtf2/Q/m9uGNlutKgHVOWTGUzrviVrks3WxwQgR7rHOo8=",
+              "path": "/",
+              "domain": ".info.collab.net",
+              "httpOnly": true,
+              "secure": true,
+              "expires": "2023-01-24T20:07:07+00:00"
+            }
+          ],
+          "headers": [
+            {
+              "name": "date",
+              "value": "Tue, 24 Jan 2023 19:37:07 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "text/plain"
+            },
+            {
+              "name": "last-modified",
+              "value": "Sat, 21 Jan 2023 03:08:37 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"162183-44c4-5f2bd7b7098aa\""
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "cf-cache-status",
+              "value": "EXPIRED"
+            },
+            {
+              "name": "expires",
+              "value": "Tue, 24 Jan 2023 19:38:07 GMT"
+            },
+            {
+              "name": "cache-control",
+              "value": "public, max-age=60"
+            },
+            {
+              "name": "set-cookie",
+              "value": "__cf_bm=jPI_yyxvvhimxYECCMTSlDqTEPRPqE2aqkw4izQas0c-1674589027-0-AWNRFDphyoHuN2jTptnuwvvpIDLjyl/m10yQODvwYUCtf2/Q/m9uGNlutKgHVOWTGUzrviVrks3WxwQgR7rHOo8=; path=/; expires=Tue, 24-Jan-23 20:07:07 GMT; domain=.info.collab.net; HttpOnly; Secure; SameSite=None"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "cf-ray",
+              "value": "78eb38ca7c2dcf61-SJC"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            }
+          ],
+          "content": {
+            "size": 17632,
+            "compression": -28,
+            "mimeType": "text/plain"
+          },
+          "redirectURL": "",
+          "headersSize": 798,
+          "bodySize": 17632
+        },
+        "cache": {},
+        "timings": {
+          "send": 105,
+          "receive": 10,
+          "wait": 163,
+          "connect": -1000,
+          "ssl": -1000
+        },
+        "serverIPAddress": "104.17.72.206",
+        "connection": "49c9c457-071e-4958-8728-923cc50b81a4"
+      },
+      {
+        "startedDateTime": "2023-01-24T19:37:07.372426+00:00",
+        "time": 435,
+        "request": {
+          "method": "POST",
+          "url": "https://gsp64-ssl.ls.apple.com/hvr/v3/use",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "gsp64-ssl.ls.apple.com"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/octet-stream"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "User-Agent",
+              "value": "geod/1 CFNetwork/1188 Darwin/20.0.0"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-us"
+            },
+            {
+              "name": "Content-Length",
+              "value": "351"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 308,
+          "bodySize": 351,
+          "postData": {
+            "mimeType": "application/octet-stream",
+            "text": "\u0000\u0002\u0000\u0005en_US\u0000\u000ecom.apple.geod\u0000\r14.0.18A5342e\u0000\u0004NONE\u0000\u0000\u0003\u00f9\u0000\u0000\u0001)\n\u00a6\u0002\u00b2\u0006\u009e\u0002\n&\u0098\u0006\u00c9\u0001\u00ca\f\u001f\n\r14.0.18A5342e\u0012\niPhone11,8\u0018\u0000 \u0000\n\u001f\u0098\u0006\u00ad\u0002\u00ea\u0012\u0018\n\u000ecom.apple.geod\u0012\u00031.0\u001a\u00011\n\u000b\u0098\u0006\u0092\u0003\u0092\u0019\u0004\n\u0002en\n\u0011\u0098\u0006\u0093\u0003\u009a\u0019\n\b\u0003\u0012\u0002US\u001a\u0000 \u0001\n\u0007\u0098\u0006\u0097\u0003\u00ba\u0019\u0000\n\t\u0098\u0006\u0094\u0003\u00a2\u0019\u0002\b\u0000\n\u000b\u0098\u0006\u00da\u0004\u00d2%\u0004\u001a\u0002\b\u0000\n\t\u0098\u0006\u00c3\u0005\u009a,\u0002\b\u0004\n4\u0098\u0006\u00d9\u0004\u00ca%-\n\u0015\b\u00bb\u00d9\u009c\u009e\u0080\u00d6\u00bc\u00a4\u00da\u0001\u0010\u009e\u0083\u00a2\u0082\u00b8\u009f\u00ef\u0099N\u0019\u0000\u0000\u0000P5\u00c0\u00c4A2\u000b\b\u00c0\u00e0\u0081\u00cc\u0002\u0015\u0000\u0000\u00a0\u00c0\u00a0\u0006\u0006\u00d2\u0006M\b\r\u0010\u00f0\u0005\u0018\u009f\u0014B\u0011com.apple.parsecd\u0080\u0001\u00b6\u0005\u0088\u0001\u00c8\u0001\u00b2\u0001\u0004prod\u00b8\u0001\u00b2\u00ba\u008c\u0001\u00c0\u0001\u0000\u00c8\u0001\u0000\u0092\u0003\u001117.253.17.211:443\u0098\u0003\u0000\u00c0>\u00e0]",
+            "params": []
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Tue, 24 Jan 2023 19:37:07 GMT"
+            },
+            {
+              "name": "Content-Length",
+              "value": "35"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "X-RID",
+              "value": "751d50e2-f6da-4740-8e15-30e0928ff376"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000; includeSubDomains;"
+            }
+          ],
+          "content": {
+            "size": 35,
+            "compression": -25,
+            "mimeType": ""
+          },
+          "redirectURL": "",
+          "headersSize": 270,
+          "bodySize": 35
+        },
+        "cache": {},
+        "timings": {
+          "send": 5,
+          "receive": 5,
+          "wait": 162,
+          "connect": 80,
+          "ssl": 183
+        },
+        "serverIPAddress": "17.57.12.113",
+        "connection": "95f32b7e-d764-45ca-973b-c58ade1e75fc"
+      }
+    ],
+    "_websocketStart": [
+
+    ],
+    "_websocketEnd": [
+
+    ],
+    "_websocketMsg": [
+
+    ],
+    "_errorEntries": [
+
+    ]
+  }
+}

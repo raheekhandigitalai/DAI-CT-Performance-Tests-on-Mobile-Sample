@@ -1,0 +1,25 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "Experitest HAR",
+      "version": "0.1",
+      "comment": "mitmproxy version mitmproxy 4.0.4"
+    },
+    "entries": [
+
+    ],
+    "_websocketStart": [
+
+    ],
+    "_websocketEnd": [
+
+    ],
+    "_websocketMsg": [
+
+    ],
+    "_errorEntries": [
+
+    ]
+  }
+}

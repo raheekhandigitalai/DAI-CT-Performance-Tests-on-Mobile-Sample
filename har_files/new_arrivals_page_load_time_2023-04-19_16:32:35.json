@@ -1,0 +1,554 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "Experitest HAR",
+      "version": "0.1",
+      "comment": "mitmproxy version mitmproxy 4.0.4"
+    },
+    "entries": [
+      {
+        "startedDateTime": "2023-04-19T20:32:25.070107+00:00",
+        "time": 445,
+        "request": {
+          "method": "POST",
+          "url": "https://api.segment.io/v1/batch",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api.segment.io"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "tracestate",
+              "value": "@nr=0-2-376472-674336930-27be2f05f3ce1893--0--1681936344466"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "newrelic",
+              "value": "ewoiZCI6IHsKImFjIjogIjM3NjQ3MiIsCiJhcCI6ICI2NzQzMzY5MzAiLAoiaWQiOiAiMjdiZTJmMDVmM2NlMTg5MyIsCiJ0aSI6IDE2ODE5MzYzNDQ0NjYsCiJ0ciI6ICJlY2QxNzkyYTNlOTJkZmQxMGE0N2Q0MTgxOTMwN2MzMiIsCiJ0eSI6ICJNb2JpbGUiCn0sCiJ2IjogWwowLAoyCl0KfQ=="
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-us"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "content-length",
+              "value": "1219"
+            },
+            {
+              "name": "user-agent",
+              "value": "analytics-ios/4.1.8"
+            },
+            {
+              "name": "x-newrelic-id",
+              "value": "VwEBVVFRGwUHUFJRAQgEVg=="
+            },
+            {
+              "name": "traceparent",
+              "value": "00-ecd1792a3e92dfd10a47d41819307c32-27be2f05f3ce1893-00"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 722,
+          "bodySize": 6906,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"batch\":[{\"messageId\":\"99790D2C-4B39-4C59-B690-A792BAF85800\",\"anonymousId\":\"7FBED7FC-E7F0-4218-92CD-0FF2325A368B\",\"event\":\"Application Opened\",\"context\":{\"screen\":{\"width\":375,\"height\":812},\"instanceId\":\"16802587-0D17-43DD-806B-FD7C64674127\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone12,3\",\"id\":\"70D5C72B-7277-40F7-9689-318043245924\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"13.3.1\"},\"locale\":\"en-US\",\"library\":{\"name\":\"analytics-ios\",\"version\":\"4.1.8\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"version\":\"6.5.1\",\"referring_application\":\"\",\"from_background\":false,\"url\":\"\",\"build\":\"06005011\"},\"type\":\"track\",\"timestamp\":\"2023-04-19T20:31:54.499Z\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"B6A07BD6-8882-4511-91BE-C0BC100BCDAF\",\"anonymousId\":\"7FBED7FC-E7F0-4218-92CD-0FF2325A368B\",\"context\":{\"screen\":{\"width\":375,\"height\":812},\"instanceId\":\"16802587-0D17-43DD-806B-FD7C64674127\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone12,3\",\"id\":\"70D5C72B-7277-40F7-9689-318043245924\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"13.3.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 1:31:58 PM\",\"language\":\"-\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"currency\":\"-\",\"brand\":\"Levi\",\"customer_account_type\":\"anonymous\",\"screen_name\":\"DiscoverScreen\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"customer_user_id\":\"anonymous\",\"app_id\":\"Levi\",\"internal_campaign_code\":\"-\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_loyalty_user\":\"-\",\"customer_state\":\"-\",\"device_model\":\"iPhone 11 Pro\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"type\":\"screen\",\"timestamp\":\"2023-04-19T20:31:58.771Z\",\"name\":\"discover\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"FED2EBFB-339B-445B-8335-C7538F8BDBF3\",\"anonymousId\":\"7FBED7FC-E7F0-4218-92CD-0FF2325A368B\",\"event\":\"Navigation Click\",\"context\":{\"screen\":{\"width\":375,\"height\":812},\"instanceId\":\"16802587-0D17-43DD-806B-FD7C64674127\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone12,3\",\"id\":\"70D5C72B-7277-40F7-9689-318043245924\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"13.3.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 1:32:02 PM\",\"language\":\"-\",\"link_id\":\"Homepage\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"currency\":\"-\",\"brand\":\"Levi\",\"customer_account_type\":\"anonymous\",\"screen_name\":\"DiscoverScreen\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"event\":\"Navigation Click\",\"customer_user_id\":\"anonymous\",\"app_id\":\"Levi\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_loyalty_user\":\"-\",\"internal_campaign_code\":\"-\",\"customer_state\":\"-\",\"device_model\":\"iPhone 11 Pro\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"type\":\"track\",\"timestamp\":\"2023-04-19T20:32:02.123Z\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"9CCCF6DA-26BB-482C-95D1-F307C29A860B\",\"anonymousId\":\"7FBED7FC-E7F0-4218-92CD-0FF2325A368B\",\"event\":\"Navigation Click\",\"context\":{\"screen\":{\"width\":375,\"height\":812},\"instanceId\":\"16802587-0D17-43DD-806B-FD7C64674127\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone12,3\",\"id\":\"70D5C72B-7277-40F7-9689-318043245924\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"13.3.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 1:32:02 PM\",\"language\":\"-\",\"link_id\":\"Homepage\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"currency\":\"-\",\"brand\":\"Levi\",\"customer_account_type\":\"anonymous\",\"screen_name\":\"DiscoverScreen\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"event\":\"Navigation Click\",\"customer_user_id\":\"anonymous\",\"app_id\":\"Levi\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_loyalty_user\":\"-\",\"internal_campaign_code\":\"-\",\"customer_state\":\"-\",\"device_model\":\"iPhone 11 Pro\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"type\":\"track\",\"timestamp\":\"2023-04-19T20:32:02.123Z\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}},{\"messageId\":\"DC28C8A0-A6DE-49AF-B8AC-8C04049358F4\",\"anonymousId\":\"7FBED7FC-E7F0-4218-92CD-0FF2325A368B\",\"context\":{\"screen\":{\"width\":375,\"height\":812},\"instanceId\":\"16802587-0D17-43DD-806B-FD7C64674127\",\"device\":{\"manufacturer\":\"Apple\",\"model\":\"iPhone12,3\",\"id\":\"70D5C72B-7277-40F7-9689-318043245924\",\"type\":\"ios\",\"name\":\"iPhone\"},\"app\":{\"version\":\"6.5.1\",\"namespace\":\"com.levistrauss.customer\",\"name\":\"Levi's\",\"build\":\"06005011\"},\"os\":{\"name\":\"iOS\",\"version\":\"13.3.1\"},\"locale\":\"en-US\",\"library\":{\"version\":\"1.5.1\",\"name\":\"analytics-react-native\"},\"timezone\":\"America\\/Los_Angeles\",\"traits\":{},\"network\":{\"wifi\":true,\"cellular\":false}},\"properties\":{\"finding_method\":\"browse\",\"screen_type\":\"HomeScreen\",\"time\":\"4\\/19\\/2023, 1:32:02 PM\",\"language\":\"-\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"currency\":\"-\",\"brand\":\"Levi\",\"customer_account_type\":\"anonymous\",\"screen_name\":\"HomeScreen\",\"customer_loyalty_geo\":\"lsa\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"customer_user_id\":\"anonymous\",\"app_id\":\"Levi\",\"internal_campaign_code\":\"-\",\"department\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_loyalty_user\":\"-\",\"customer_state\":\"-\",\"device_model\":\"iPhone 11 Pro\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"type\":\"screen\",\"timestamp\":\"2023-04-19T20:32:02.176Z\",\"name\":\"homepage\",\"integrations\":{\"Amplitude\":false,\"Firebase\":false}}],\"writeKey\":\"1iSCJKIpH5CDSw0sV0tk1qLYOA8ztIuZ\",\"sentAt\":\"2023-04-19T20:32:24.466Z\"}",
+            "params": []
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 19 Apr 2023 20:32:25 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "content-length",
+              "value": "21"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            },
+            {
+              "name": "vary",
+              "value": "Origin"
+            }
+          ],
+          "content": {
+            "size": 21,
+            "compression": 0,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": 195,
+          "bodySize": 21
+        },
+        "cache": {},
+        "timings": {
+          "send": 7,
+          "receive": 7,
+          "wait": 147,
+          "connect": 86,
+          "ssl": 198
+        },
+        "serverIPAddress": "35.161.199.93",
+        "connection": "ee48aa7d-8b48-4990-b7ed-12f8e6205cd4"
+      },
+      {
+        "startedDateTime": "2023-04-19T20:32:25.153435+00:00",
+        "time": 445,
+        "request": {
+          "method": "POST",
+          "url": "https://api2.amplitude.com/",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api2.amplitude.com"
+            },
+            {
+              "name": "content-type",
+              "value": "application/x-www-form-urlencoded"
+            },
+            {
+              "name": "tracestate",
+              "value": "@nr=0-2-376472-674336930-7220d70a7ae54139--0--1681936344556"
+            },
+            {
+              "name": "cls-requestid",
+              "value": "-2077661406"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "newrelic",
+              "value": "ewoiZCI6IHsKImFjIjogIjM3NjQ3MiIsCiJhcCI6ICI2NzQzMzY5MzAiLAoiaWQiOiAiNzIyMGQ3MGE3YWU1NDEzOSIsCiJ0aSI6IDE2ODE5MzYzNDQ1NTYsCiJ0ciI6ICIwMjJiZWJlOTA5MjdlZWZiMzE0ZmE4OThjZDMwZTkzMCIsCiJ0eSI6ICJNb2JpbGUiCn0sCiJ2IjogWwowLAoyCl0KfQ=="
+            },
+            {
+              "name": "accept-language",
+              "value": "en-us"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "content-length",
+              "value": "9064"
+            },
+            {
+              "name": "user-agent",
+              "value": "LeviStraussAmericasApp/06005011 CFNetwork/1121.2.2 Darwin/19.3.0"
+            },
+            {
+              "name": "x-newrelic-id",
+              "value": "VwEBVVFRGwUHUFJRAQgEVg=="
+            },
+            {
+              "name": "traceparent",
+              "value": "00-022bebe90927eefb314fa898cd30e930-7220d70a7ae54139-00"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 805,
+          "bodySize": 9064,
+          "postData": {
+            "mimeType": "application/x-www-form-urlencoded",
+            "text": "v=3&client=c477fe21fa9e7e6dd0e570d364db49a5&e=%5B%7B%22session_id%22%3A1681936032223%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Application%20Opened%22%2C%22sequence_number%22%3A35%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%2270D5C72B-7277-40F7-9689-318043245924%22%7D%2C%22device_id%22%3A%2270D5C72B-7277-40F7-9689-318043245924%22%2C%22event_properties%22%3A%7B%22version%22%3A%226.5.1%22%2C%22referring_application%22%3A%22%22%2C%22from_background%22%3Afalse%2C%22url%22%3A%22%22%2C%22build%22%3A%2206005011%22%7D%2C%22uuid%22%3A%229D1AA28D-42A9-4A8E-B602-E8073C81E6FB%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A35%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681936314499%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2213.3.1%22%2C%22device_model%22%3A%22iPhone%2011%20Pro%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681936032223%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Loaded%20a%20Screen%22%2C%22sequence_number%22%3A36%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%2270D5C72B-7277-40F7-9689-318043245924%22%7D%2C%22device_id%22%3A%2270D5C72B-7277-40F7-9689-318043245924%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%22screen_type%22%3A%22DiscoverScreen%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%201%3A31%3A58%20PM%22%2C%22language%22%3A%22-%22%2C%22country%22%3A%22United%20States%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22brand%22%3A%22Levi%22%2C%22currency%22%3A%22-%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22name%22%3A%22discover%22%2C%22app_id%22%3A%22Levi%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22internal_campaign_code%22%3A%22-%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%22screen_name%22%3A%22DiscoverScreen%22%2C%22department%22%3A%22-%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22customer_state%22%3A%22-%22%2C%22device_model%22%3A%22iPhone%2011%20Pro%22%2C%22breadcrumb%22%3A%22-%22%2C%22experience%22%3A%22Mobile%20App%22%2C%22device_type%22%3A%22phone%22%2C%22customer_city%22%3A%22-%22%2C%22customer_auth_status%22%3A%22guest%22%7D%2C%22uuid%22%3A%221CE14B0E-A4DF-4156-9A8F-6EAE07BB1E70%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A36%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681936318770%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2213.3.1%22%2C%22device_model%22%3A%22iPhone%2011%20Pro%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681936032223%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Navigation%20Click%22%2C%22sequence_number%22%3A37%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%2270D5C72B-7277-40F7-9689-318043245924%22%7D%2C%22device_id%22%3A%2270D5C72B-7277-40F7-9689-318043245924%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%22screen_type%22%3A%22DiscoverScreen%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%201%3A32%3A02%20PM%22%2C%22language%22%3A%22-%22%2C%22link_id%22%3A%22Homepage%22%2C%22country%22%3A%22United%20States%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22brand%22%3A%22Levi%22%2C%22currency%22%3A%22-%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22app_id%22%3A%22Levi%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22internal_campaign_code%22%3A%22-%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22event%22%3A%22Navigation%20Click%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%22department%22%3A%22-%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22screen_name%22%3A%22DiscoverScreen%22%2C%22customer_state%22%3A%22-%22%2C%22device_model%22%3A%22iPhone%2011%20Pro%22%2C%22breadcrumb%22%3A%22-%22%2C%22experience%22%3A%22Mobile%20App%22%2C%22device_type%22%3A%22phone%22%2C%22customer_city%22%3A%22-%22%2C%22customer_auth_status%22%3A%22guest%22%7D%2C%22uuid%22%3A%222BB3E473-1E0B-459B-A2B8-EB9D8BFA820A%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A37%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681936322122%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2213.3.1%22%2C%22device_model%22%3A%22iPhone%2011%20Pro%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681936032223%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Navigation%20Click%22%2C%22sequence_number%22%3A38%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%2270D5C72B-7277-40F7-9689-318043245924%22%7D%2C%22device_id%22%3A%2270D5C72B-7277-40F7-9689-318043245924%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%22screen_type%22%3A%22DiscoverScreen%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%201%3A32%3A02%20PM%22%2C%22language%22%3A%22-%22%2C%22link_id%22%3A%22Homepage%22%2C%22country%22%3A%22United%20States%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22brand%22%3A%22Levi%22%2C%22currency%22%3A%22-%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22app_id%22%3A%22Levi%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22internal_campaign_code%22%3A%22-%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22event%22%3A%22Navigation%20Click%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%22department%22%3A%22-%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22screen_name%22%3A%22DiscoverScreen%22%2C%22customer_state%22%3A%22-%22%2C%22device_model%22%3A%22iPhone%2011%20Pro%22%2C%22breadcrumb%22%3A%22-%22%2C%22experience%22%3A%22Mobile%20App%22%2C%22device_type%22%3A%22phone%22%2C%22customer_city%22%3A%22-%22%2C%22customer_auth_status%22%3A%22guest%22%7D%2C%22uuid%22%3A%22949B8F9B-7E03-429D-9A4E-BC317B71D33B%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A38%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681936322124%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2213.3.1%22%2C%22device_model%22%3A%22iPhone%2011%20Pro%22%2C%22group_properties%22%3A%7B%7D%7D%2C%7B%22session_id%22%3A1681936032223%2C%22user_properties%22%3A%7B%7D%2C%22language%22%3A%22English%22%2C%22event_type%22%3A%22Loaded%20a%20Screen%22%2C%22sequence_number%22%3A39%2C%22country%22%3A%22United%20States%22%2C%22api_properties%22%3A%7B%22ios_idfv%22%3A%2270D5C72B-7277-40F7-9689-318043245924%22%7D%2C%22device_id%22%3A%2270D5C72B-7277-40F7-9689-318043245924%22%2C%22event_properties%22%3A%7B%22finding_method%22%3A%22browse%22%2C%22screen_type%22%3A%22HomeScreen%22%2C%22time%22%3A%224%5C%2F19%5C%2F2023%2C%201%3A32%3A02%20PM%22%2C%22language%22%3A%22-%22%2C%22country%22%3A%22United%20States%22%2C%22app_name%22%3A%22com.levisstraussamericasaspp%22%2C%22brand%22%3A%22Levi%22%2C%22currency%22%3A%22-%22%2C%22customer_account_type%22%3A%22anonymous%22%2C%22name%22%3A%22homepage%22%2C%22app_id%22%3A%22Levi%22%2C%22customer_loyalty_geo%22%3A%22lsa%22%2C%22internal_campaign_code%22%3A%22-%22%2C%22customer_levi_id%22%3A%222d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8%22%2C%22customer_user_id%22%3A%22anonymous%22%2C%22screen_name%22%3A%22HomeScreen%22%2C%22department%22%3A%22-%22%2C%22customer_loyalty_user%22%3A%22-%22%2C%22customer_loyalty_onboarded%22%3A%22N%22%2C%22customer_state%22%3A%22-%22%2C%22device_model%22%3A%22iPhone%2011%20Pro%22%2C%22breadcrumb%22%3A%22-%22%2C%22experience%22%3A%22Mobile%20App%22%2C%22device_type%22%3A%22phone%22%2C%22customer_city%22%3A%22-%22%2C%22customer_auth_status%22%3A%22guest%22%7D%2C%22uuid%22%3A%2208BA850D-31D9-4F13-BD1F-5DFCFD83715C%22%2C%22device_manufacturer%22%3A%22Apple%22%2C%22version_name%22%3A%226.5.1%22%2C%22library%22%3A%7B%22name%22%3A%22amplitude-ios%22%2C%22version%22%3A%228.15.2%22%7D%2C%22os_name%22%3A%22ios%22%2C%22platform%22%3A%22iOS%22%2C%22event_id%22%3A39%2C%22carrier%22%3A%22Unknown%22%2C%22timestamp%22%3A1681936322176%2C%22groups%22%3A%7B%7D%2C%22os_version%22%3A%2213.3.1%22%2C%22device_model%22%3A%22iPhone%2011%20Pro%22%2C%22group_properties%22%3A%7B%7D%7D%5D&upload_time=1681936344556&checksum=c87dbf9a918b1157ae0689fbde258616",
+            "params": [
+              {
+                "name": "v",
+                "value": "3"
+              },
+              {
+                "name": "client",
+                "value": "c477fe21fa9e7e6dd0e570d364db49a5"
+              },
+              {
+                "name": "e",
+                "value": "[{\"session_id\":1681936032223,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Application Opened\",\"sequence_number\":35,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"70D5C72B-7277-40F7-9689-318043245924\"},\"device_id\":\"70D5C72B-7277-40F7-9689-318043245924\",\"event_properties\":{\"version\":\"6.5.1\",\"referring_application\":\"\",\"from_background\":false,\"url\":\"\",\"build\":\"06005011\"},\"uuid\":\"9D1AA28D-42A9-4A8E-B602-E8073C81E6FB\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":35,\"carrier\":\"Unknown\",\"timestamp\":1681936314499,\"groups\":{},\"os_version\":\"13.3.1\",\"device_model\":\"iPhone 11 Pro\",\"group_properties\":{}},{\"session_id\":1681936032223,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Loaded a Screen\",\"sequence_number\":36,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"70D5C72B-7277-40F7-9689-318043245924\"},\"device_id\":\"70D5C72B-7277-40F7-9689-318043245924\",\"event_properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 1:31:58 PM\",\"language\":\"-\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"name\":\"discover\",\"app_id\":\"Levi\",\"customer_loyalty_geo\":\"lsa\",\"internal_campaign_code\":\"-\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"customer_user_id\":\"anonymous\",\"screen_name\":\"DiscoverScreen\",\"department\":\"-\",\"customer_loyalty_user\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_state\":\"-\",\"device_model\":\"iPhone 11 Pro\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"uuid\":\"1CE14B0E-A4DF-4156-9A8F-6EAE07BB1E70\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":36,\"carrier\":\"Unknown\",\"timestamp\":1681936318770,\"groups\":{},\"os_version\":\"13.3.1\",\"device_model\":\"iPhone 11 Pro\",\"group_properties\":{}},{\"session_id\":1681936032223,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Navigation Click\",\"sequence_number\":37,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"70D5C72B-7277-40F7-9689-318043245924\"},\"device_id\":\"70D5C72B-7277-40F7-9689-318043245924\",\"event_properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 1:32:02 PM\",\"language\":\"-\",\"link_id\":\"Homepage\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"app_id\":\"Levi\",\"customer_loyalty_geo\":\"lsa\",\"internal_campaign_code\":\"-\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"event\":\"Navigation Click\",\"customer_user_id\":\"anonymous\",\"department\":\"-\",\"customer_loyalty_user\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"screen_name\":\"DiscoverScreen\",\"customer_state\":\"-\",\"device_model\":\"iPhone 11 Pro\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"uuid\":\"2BB3E473-1E0B-459B-A2B8-EB9D8BFA820A\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":37,\"carrier\":\"Unknown\",\"timestamp\":1681936322122,\"groups\":{},\"os_version\":\"13.3.1\",\"device_model\":\"iPhone 11 Pro\",\"group_properties\":{}},{\"session_id\":1681936032223,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Navigation Click\",\"sequence_number\":38,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"70D5C72B-7277-40F7-9689-318043245924\"},\"device_id\":\"70D5C72B-7277-40F7-9689-318043245924\",\"event_properties\":{\"finding_method\":\"browse\",\"screen_type\":\"DiscoverScreen\",\"time\":\"4\\/19\\/2023, 1:32:02 PM\",\"language\":\"-\",\"link_id\":\"Homepage\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"app_id\":\"Levi\",\"customer_loyalty_geo\":\"lsa\",\"internal_campaign_code\":\"-\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"event\":\"Navigation Click\",\"customer_user_id\":\"anonymous\",\"department\":\"-\",\"customer_loyalty_user\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"screen_name\":\"DiscoverScreen\",\"customer_state\":\"-\",\"device_model\":\"iPhone 11 Pro\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"uuid\":\"949B8F9B-7E03-429D-9A4E-BC317B71D33B\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":38,\"carrier\":\"Unknown\",\"timestamp\":1681936322124,\"groups\":{},\"os_version\":\"13.3.1\",\"device_model\":\"iPhone 11 Pro\",\"group_properties\":{}},{\"session_id\":1681936032223,\"user_properties\":{},\"language\":\"English\",\"event_type\":\"Loaded a Screen\",\"sequence_number\":39,\"country\":\"United States\",\"api_properties\":{\"ios_idfv\":\"70D5C72B-7277-40F7-9689-318043245924\"},\"device_id\":\"70D5C72B-7277-40F7-9689-318043245924\",\"event_properties\":{\"finding_method\":\"browse\",\"screen_type\":\"HomeScreen\",\"time\":\"4\\/19\\/2023, 1:32:02 PM\",\"language\":\"-\",\"country\":\"United States\",\"app_name\":\"com.levisstraussamericasaspp\",\"brand\":\"Levi\",\"currency\":\"-\",\"customer_account_type\":\"anonymous\",\"name\":\"homepage\",\"app_id\":\"Levi\",\"customer_loyalty_geo\":\"lsa\",\"internal_campaign_code\":\"-\",\"customer_levi_id\":\"2d1fb74c-5ad0-45e8-b02f-f0cdd478c7d8\",\"customer_user_id\":\"anonymous\",\"screen_name\":\"HomeScreen\",\"department\":\"-\",\"customer_loyalty_user\":\"-\",\"customer_loyalty_onboarded\":\"N\",\"customer_state\":\"-\",\"device_model\":\"iPhone 11 Pro\",\"breadcrumb\":\"-\",\"experience\":\"Mobile App\",\"device_type\":\"phone\",\"customer_city\":\"-\",\"customer_auth_status\":\"guest\"},\"uuid\":\"08BA850D-31D9-4F13-BD1F-5DFCFD83715C\",\"device_manufacturer\":\"Apple\",\"version_name\":\"6.5.1\",\"library\":{\"name\":\"amplitude-ios\",\"version\":\"8.15.2\"},\"os_name\":\"ios\",\"platform\":\"iOS\",\"event_id\":39,\"carrier\":\"Unknown\",\"timestamp\":1681936322176,\"groups\":{},\"os_version\":\"13.3.1\",\"device_model\":\"iPhone 11 Pro\",\"group_properties\":{}}]"
+              },
+              {
+                "name": "upload_time",
+                "value": "1681936344556"
+              },
+              {
+                "name": "checksum",
+                "value": "c87dbf9a918b1157ae0689fbde258616"
+              }
+            ]
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 19 Apr 2023 20:32:25 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html;charset=utf-8"
+            },
+            {
+              "name": "content-length",
+              "value": "7"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST"
+            },
+            {
+              "name": "trace-id",
+              "value": "Root=1-64404fd9-5d40f74f7544ad4b48bd0fe7"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15768000"
+            }
+          ],
+          "content": {
+            "size": 7,
+            "compression": 0,
+            "mimeType": "text/html;charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 328,
+          "bodySize": 7
+        },
+        "cache": {},
+        "timings": {
+          "send": 56,
+          "receive": 5,
+          "wait": 107,
+          "connect": 82,
+          "ssl": 195
+        },
+        "serverIPAddress": "44.237.212.73",
+        "connection": "61d470da-2657-45cf-837f-ed2041a04ce6"
+      },
+      {
+        "startedDateTime": "2023-04-19T20:32:26.256406+00:00",
+        "time": 451,
+        "request": {
+          "method": "POST",
+          "url": "https://gs-loc.apple.com/clls/wloc",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Host",
+              "value": "gs-loc.apple.com"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/x-www-form-urlencoded"
+            },
+            {
+              "name": "User-Agent",
+              "value": "locationd/2390.0.7 CFNetwork/1121.2.2 Darwin/19.3.0"
+            },
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-us"
+            },
+            {
+              "name": "Content-Length",
+              "value": "82"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Connection",
+              "value": "close"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 321,
+          "bodySize": 82,
+          "postData": {
+            "mimeType": "application/x-www-form-urlencoded",
+            "text": "\u0000\u0001\u0000\u0005en_US\u0000\u0013com.apple.locationd\u0000\f13.3.1.17D50\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u001e\b\u00ce\u00d1\u00d1\u00f7\r\u0010\u0094\u0095\u00c9\u00ca\u00d2\u00ff\u00ff\u00ff\u00ff\u0001\u0018\u0000 \u00ff\u00ff\u00ff\u00ff\u00ff\u00ff\u00ff\u00ff\u00ff\u0001",
+            "params": [
+              {
+                "name": "\u0000\u0001\u0000\u0005en_US\u0000\u0013com.apple.locationd\u0000\f13.3.1.17D50\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u001e\b\u00ce\u00d1\u00d1\u00f7\r\u0010\u0094\u0095\u00c9\u00ca\u00d2\u00ff\u00ff\u00ff\u00ff\u0001\u0018\u0000 \u00ff\u00ff\u00ff\u00ff\u00ff\u00ff\u00ff\u00ff\u00ff\u0001",
+                "value": ""
+              }
+            ]
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-RID",
+              "value": "a08a8366-3a5f-4e34-ad8e-9d8f163004df"
+            },
+            {
+              "name": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "content-length",
+              "value": "7443"
+            }
+          ],
+          "content": {
+            "size": 7443,
+            "compression": 15959,
+            "mimeType": ""
+          },
+          "redirectURL": "",
+          "headersSize": 154,
+          "bodySize": 7443
+        },
+        "cache": {},
+        "timings": {
+          "send": 5,
+          "receive": 3,
+          "wait": 169,
+          "connect": 85,
+          "ssl": 189
+        },
+        "serverIPAddress": "17.57.172.10",
+        "connection": "62b5a591-11f6-4f5e-b8a3-7f3b2f9af1ce"
+      },
+      {
+        "startedDateTime": "2023-04-19T20:32:26.168472+00:00",
+        "time": 547,
+        "request": {
+          "method": "POST",
+          "url": "https://api.radar.io/v1/track",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "api.radar.io"
+            },
+            {
+              "name": "x-newrelic-id",
+              "value": "VwEBVVFRGwUHUFJRAQgEVg=="
+            },
+            {
+              "name": "x-radar-device-model",
+              "value": "iPhone12,3"
+            },
+            {
+              "name": "x-radar-device-os",
+              "value": "13.3.1"
+            },
+            {
+              "name": "user-agent",
+              "value": "LeviStraussAmericasApp/06005011 CFNetwork/1121.2.2 Darwin/19.3.0"
+            },
+            {
+              "name": "cls-requestid",
+              "value": "-483850928"
+            },
+            {
+              "name": "x-radar-config",
+              "value": "true"
+            },
+            {
+              "name": "x-radar-device-make",
+              "value": "Apple"
+            },
+            {
+              "name": "x-radar-device-type",
+              "value": "iOS"
+            },
+            {
+              "name": "newrelic",
+              "value": "ewoiZCI6IHsKImFjIjogIjM3NjQ3MiIsCiJhcCI6ICI2NzQzMzY5MzAiLAoiaWQiOiAiOTIwNmQ0ZGY5OGY1OWZkYiIsCiJ0aSI6IDE2ODE5MzYzNDU1ODgsCiJ0ciI6ICI3YTc0ZjI4N2I2ZDEyMmMwODYzZGUzYjNhN2MzNjE0ZSIsCiJ0eSI6ICJNb2JpbGUiCn0sCiJ2IjogWwowLAoyCl0KfQ=="
+            },
+            {
+              "name": "content-length",
+              "value": "676"
+            },
+            {
+              "name": "authorization",
+              "value": "prj_live_pk_3d52c851433bf7acffa38e5e851a5e6ebd8b5e64"
+            },
+            {
+              "name": "tracestate",
+              "value": "@nr=0-2-376472-674336930-9206d4df98f59fdb--0--1681936345588"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-us"
+            },
+            {
+              "name": "traceparent",
+              "value": "00-7a74f287b6d122c0863de3b3a7c3614e-9206d4df98f59fdb-00"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "x-radar-sdk-version",
+              "value": "3.2.4"
+            },
+            {
+              "name": "if-none-match",
+              "value": "W/\"4e9-+BdZYE8g4rFtb+XaYcvFitTcSOY\""
+            }
+          ],
+          "queryString": [],
+          "headersSize": 1130,
+          "bodySize": 676,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"source\":\"FOREGROUND_LOCATION\",\"timeZoneOffset\":-25200,\"deviceId\":\"70D5C72B-7277-40F7-9689-318043245924\",\"country\":\"US\",\"deviceType\":\"iOS\",\"deviceMake\":\"Apple\",\"deviceOS\":\"13.3.1\",\"speed\":-1,\"foreground\":true,\"latitude\":37.405595668604782,\"locationAccuracyAuthorization\":\"FULL\",\"locationAuthorization\":\"GRANTED_BACKGROUND\",\"nearbyGeofences\":true,\"sessionId\":\"1681936032\",\"accuracy\":65,\"altitude\":4.8400001525878906,\"id\":\"64404ef971be130042d1b851\",\"replayed\":false,\"longitude\":-121.91642988097021,\"sdkVersion\":\"3.2.4\",\"installId\":\"E7539B3D-1E85-4807-A63D-3370A09AA398\",\"deviceModel\":\"iPhone12,3\",\"verticalAccuracy\":603.2353515625,\"stopped\":true,\"speedAccuracy\":-1,\"course\":-1}",
+            "params": []
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "date",
+              "value": "Wed, 19 Apr 2023 20:32:26 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "x-ratelimit-limit",
+              "value": "1500"
+            },
+            {
+              "name": "x-ratelimit-remaining",
+              "value": "1499"
+            },
+            {
+              "name": "x-ratelimit-reset",
+              "value": "1681936348"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"4e7-FqpSGlJuw9TfFPu32MzEZpar6Xk\""
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "cf-ray",
+              "value": "7ba7eab3afa5ce7c-SJC"
+            }
+          ],
+          "content": {
+            "size": 718,
+            "compression": 537,
+            "mimeType": "application/json; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 470,
+          "bodySize": 718
+        },
+        "cache": {},
+        "timings": {
+          "send": 4,
+          "receive": 6,
+          "wait": 321,
+          "connect": 62,
+          "ssl": 154
+        },
+        "serverIPAddress": "104.16.51.85",
+        "connection": "ead979c8-6755-4192-8bbd-0c9b0b3d4942"
+      }
+    ],
+    "_websocketStart": [
+
+    ],
+    "_websocketEnd": [
+
+    ],
+    "_websocketMsg": [
+
+    ],
+    "_errorEntries": [
+
+    ]
+  }
+}
