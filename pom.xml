@@ -76,9 +76,9 @@
                 <version>2.22.0</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
-<!--                    <suiteXmlFiles>-->
-<!--                        <suiteXmlFile>desktop_browsers.xml</suiteXmlFile>-->
-<!--                    </suiteXmlFiles>-->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>launch_application_tests.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
 
