@@ -2,7 +2,6 @@ package tests;
 
 import helpers.Helpers;
 import helpers.PropertiesReader;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
@@ -32,7 +31,8 @@ public class PageLoadTimeTest {
         String deviceQuery = context.getCurrentXmlTest().getParameter("deviceQuery");
 
         desiredCapabilities.setCapability("testName", method.getName());
-        desiredCapabilities.setCapability("accessKey", new PropertiesReader().getProperty("accessKey"));
+        desiredCapabilities.setCapability("accessKey", System.getenv("ACCESS_KEY"));
+//        desiredCapabilities.setCapability("accessKey", new PropertiesReader().getProperty("accessKey"));
         desiredCapabilities.setCapability("deviceQuery", deviceQuery);
         desiredCapabilities.setCapability("bundleId", "com.levistrauss.customer");
         desiredCapabilities.setCapability("autoAcceptAlerts", true);
@@ -41,28 +41,6 @@ public class PageLoadTimeTest {
         wait = new WebDriverWait(driver, 10);
         helper = new Helpers(driver);
     }
-
-//    @Test
-//    public void launch_application_response_time(Method method) throws IOException, URISyntaxException {
-//        helper = new Helpers(driver);
-//        ArrayList<String> metrics = helper.extractHARFileMetrics("10832", method.getName());
-//        ArrayList<String> metrics = helper.extractHARFileMetrics("11031", method.getName());
-
-//        for (String metric : metrics) {
-//            System.out.println(metric);
-//        }
-//    }
-
-//    @Test
-//    public void testing_01() throws InterruptedException {
-//        wait.until(ExpectedConditions.elementToBeClickable(By.id("BottomTabs.Shop.ID")));
-//        driver.findElement(By.id("BottomTabs.Shop.ID")).click();
-//
-//        wait.until(ExpectedConditions.elementToBeClickable(By.id("Search.NewArrivals.ID")));
-//
-//        driver.findElement(By.id("Search.NewArrivals.ID")).click();
-//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='UIAScrollView']//*[@class='UIAImage'])[1]")));
-//    }
 
     @Test
     @Parameters({"nvProfile", "captureLevel"})
