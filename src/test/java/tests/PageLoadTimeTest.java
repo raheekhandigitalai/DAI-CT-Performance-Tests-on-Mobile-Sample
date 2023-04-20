@@ -72,14 +72,14 @@ public class PageLoadTimeTest {
             String transactionId = helper.getPropertyFromPerformanceTransactionReport(response, "transactionId");
 
             // Waiting few seconds to allow next API call to have some time for the data to accumulate after Transaction ends
-            Thread.sleep(10000);
+            Thread.sleep(5000);
 
             // Extract relevant properties from the Performance Transaction API Response
             speedIndex = helper.getPropertyFromPerformanceTransactionAPI(transactionId, "speedIndex");
 
             // Add a custom step to the Automated Test Results with a link reference to the Performance Transaction Report
             helper.addReportStep(link);
-            helper.addReportStep("Total Time to Launch & Load Application in ms: " + speedIndex);
+            helper.addReportStep("Total Time to Navigate 'Home Page > New Arrivals' Page in ms: " + speedIndex);
 
             // Get Network related Metrics
             ArrayList<String> metrics = helper.extractHARFileMetrics(transactionId, method.getName());
