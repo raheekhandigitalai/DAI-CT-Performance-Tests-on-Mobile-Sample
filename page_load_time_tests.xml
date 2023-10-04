@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Automation" parallel="tests" thread-count="5">
+<suite name="Test Automation" parallel="tests" thread-count="4">
 
     <test name="Test_Page_Load_Time_01">
 
@@ -50,16 +50,16 @@
         </classes>
     </test>
 
-    <test name="Test_Page_Load_Time_05">
+<!--    <test name="Test_Page_Load_Time_05">-->
 
-        <parameter name="nvProfile" value="4G-average" />
-        <parameter name="captureLevel" value="Application" /> <!--Accepted Values: 'Device' or 'Application' -->
+<!--        <parameter name="nvProfile" value="4G-average" />-->
+<!--        <parameter name="captureLevel" value="Application" /> &lt;!&ndash;Accepted Values: 'Device' or 'Application' &ndash;&gt;-->
 
-        <parameter name="deviceQuery" value="@serialnumber='00008110-001165561AF2401E'" />
+<!--        <parameter name="deviceQuery" value="@serialnumber='00008110-001165561AF2401E'" />-->
 
-        <classes>
-            <class name="tests.PageLoadTimeTest"/>
-        </classes>
-    </test>
+<!--        <classes>-->
+<!--            <class name="tests.PageLoadTimeTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>
