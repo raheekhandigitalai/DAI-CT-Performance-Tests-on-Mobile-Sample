@@ -1,0 +1,6 @@
+tests/E2E_Flow.class
+tests/LaunchApplicationTest.class
+helpers/Helpers.class
+helpers/PropertiesReader.class
+tests/PageLoadTimeTest.class
+tests/ExceptionHandling.class

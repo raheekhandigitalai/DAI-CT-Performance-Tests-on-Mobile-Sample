@@ -32,9 +32,8 @@ public class PageLoadTimeTest {
 
         desiredCapabilities.setCapability("testName", method.getName());
         desiredCapabilities.setCapability("accessKey", System.getenv("ACCESS_KEY"));
-//        desiredCapabilities.setCapability("accessKey", new PropertiesReader().getProperty("accessKey"));
         desiredCapabilities.setCapability("deviceQuery", deviceQuery);
-        desiredCapabilities.setCapability("bundleId", "com.levistrauss.customer");
+        desiredCapabilities.setBrowserName("Safari");
         desiredCapabilities.setCapability("autoAcceptAlerts", true);
 
         driver = new IOSDriver<>(new URL(new PropertiesReader().getProperty("cloudUrl")), desiredCapabilities);
@@ -44,22 +43,24 @@ public class PageLoadTimeTest {
 
     @Test
     @Parameters({"nvProfile", "captureLevel"})
-    public void new_arrivals_page_load_time(String nvProfile, String captureLevel, @Optional Method method) {
+    public void login_page_load_time(String nvProfile, String captureLevel, @Optional Method method) {
+        driver.navigate().to("https://demo-bank.ct.digital.ai/");
 
         try {
             // Start a group that will contain the individual test steps until 'endGroupingOfSteps' is called
             helper.startGroupingOfSteps(method.getName() + "_functional_steps");
 
             // Functional Steps to get to the point before I want to start capturing the Performance Transaction
-            wait.until(ExpectedConditions.elementToBeClickable(By.id("BottomTabs.Shop.ID")));
-            driver.findElement(By.id("BottomTabs.Shop.ID")).click();
-            wait.until(ExpectedConditions.elementToBeClickable(By.id("Search.NewArrivals.ID")));
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='mobile-login-logo']")));
+
+            driver.findElement(By.xpath("(//*[@css='INPUT.dx-texteditor-input'])[1]")).sendKeys("company");
+            driver.findElement(By.xpath("(//*[@css='INPUT.dx-texteditor-input'])[2]")).sendKeys("company");
 
             // Start Performance Transaction Capturing
-            helper.startCapturePerformanceMetrics(nvProfile, captureLevel, "com.levistrauss.customer");
+            helper.startCapturePerformanceMetrics(nvProfile, captureLevel, "com.apple.mobilesafari");
 
-            driver.findElement(By.id("Search.NewArrivals.ID")).click();
-            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='UIAScrollView']//*[@class='UIAImage'])[1]")));
+            driver.findElement(By.xpath("//*[@class='dx-button-content' and contains(text(), 'Login')]")).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='total-balance']")));
 
             // End the Performance Transaction Capturing
             String response = helper.endCapturePerformanceMetrics(method.getName());
@@ -79,7 +80,7 @@ public class PageLoadTimeTest {
 
             // Add a custom step to the Automated Test Results with a link reference to the Performance Transaction Report
             helper.addReportStep(link);
-            helper.addReportStep("Total Time to Navigate 'Home Page > New Arrivals' Page in ms: " + speedIndex);
+            helper.addReportStep("Total Time to Navigate 'Login Page > Dashboard' Page in ms: " + speedIndex);
 
             // Get Network related Metrics
             ArrayList<String> metrics = helper.extractHARFileMetrics(transactionId, method.getName());
@@ -95,7 +96,7 @@ public class PageLoadTimeTest {
             e.printStackTrace();
         }
 
-        // Add custom properties that allow for easier filtering for the Automated Test Results
+//         Add custom properties that allow for easier filtering for the Automated Test Results
         helper.addPropertyForReporting("nvProfile", nvProfile);
         helper.addPropertyForReporting("captureLevel", captureLevel);
 

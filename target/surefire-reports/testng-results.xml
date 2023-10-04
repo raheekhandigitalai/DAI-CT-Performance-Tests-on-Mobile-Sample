@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Automation" duration-ms="274845" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:11:35 EDT">
+    <groups>
+    </groups>
+    <test name="Test_Page_Load_Time_02" duration-ms="81742" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:08:22 EDT">
+      <class name="tests.PageLoadTimeTest">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@2d6eabae]" name="setUp" is-config="true" duration-ms="23793" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:07:24 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@46daef40]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void tests.PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@2d6eabae]" name="login_page_load_time" duration-ms="48460" started-at="2023-10-04T12:07:24 EDT" finished-at="2023-10-04T12:08:13 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4G-average]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Application]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void tests.PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_page_load_time -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.PageLoadTimeTest@2d6eabae]" name="tearDown" is-config="true" duration-ms="9444" started-at="2023-10-04T12:08:13 EDT" finished-at="2023-10-04T12:08:22 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login_page_load_time status=SUCCESS method=PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@2d6eabae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.PageLoadTimeTest -->
+    </test> <!-- Test_Page_Load_Time_02 -->
+    <test name="Test_Page_Load_Time_03" duration-ms="85092" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:08:26 EDT">
+      <class name="tests.PageLoadTimeTest">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@48503868]" name="setUp" is-config="true" duration-ms="19989" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:07:21 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@12f41634]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void tests.PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@48503868]" name="login_page_load_time" duration-ms="55366" started-at="2023-10-04T12:07:21 EDT" finished-at="2023-10-04T12:08:16 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4G-average]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Application]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void tests.PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_page_load_time -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.PageLoadTimeTest@48503868]" name="tearDown" is-config="true" duration-ms="9695" started-at="2023-10-04T12:08:16 EDT" finished-at="2023-10-04T12:08:26 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login_page_load_time status=SUCCESS method=PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.PageLoadTimeTest -->
+    </test> <!-- Test_Page_Load_Time_03 -->
+    <test name="Test_Page_Load_Time_04" duration-ms="89112" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:08:30 EDT">
+      <class name="tests.PageLoadTimeTest">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@1f7030a6]" name="setUp" is-config="true" duration-ms="30327" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:07:31 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13c27452]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void tests.PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@1f7030a6]" name="login_page_load_time" duration-ms="49961" started-at="2023-10-04T12:07:31 EDT" finished-at="2023-10-04T12:08:21 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4G-average]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Application]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void tests.PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_page_load_time -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.PageLoadTimeTest@1f7030a6]" name="tearDown" is-config="true" duration-ms="8785" started-at="2023-10-04T12:08:21 EDT" finished-at="2023-10-04T12:08:30 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login_page_load_time status=SUCCESS method=PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@1f7030a6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.PageLoadTimeTest -->
+    </test> <!-- Test_Page_Load_Time_04 -->
+    <test name="Test_Page_Load_Time_01" duration-ms="95914" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:08:37 EDT">
+      <class name="tests.PageLoadTimeTest">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@eec5a4a]" name="setUp" is-config="true" duration-ms="24196" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:07:25 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b69c6ba]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void tests.PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@eec5a4a]" name="login_page_load_time" duration-ms="60677" started-at="2023-10-04T12:07:25 EDT" finished-at="2023-10-04T12:08:26 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4G-average]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Application]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void tests.PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_page_load_time -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.PageLoadTimeTest@eec5a4a]" name="tearDown" is-config="true" duration-ms="11000" started-at="2023-10-04T12:08:26 EDT" finished-at="2023-10-04T12:08:37 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login_page_load_time status=SUCCESS method=PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@eec5a4a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.PageLoadTimeTest -->
+    </test> <!-- Test_Page_Load_Time_01 -->
+    <test name="Test_Page_Load_Time_05" duration-ms="274844" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:11:35 EDT">
+      <class name="tests.PageLoadTimeTest">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@27a5f880]" name="setUp" is-config="true" duration-ms="185025" started-at="2023-10-04T12:07:01 EDT" finished-at="2023-10-04T12:10:06 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@262b2c86]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void tests.PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@27a5f880]" name="login_page_load_time" duration-ms="61956" started-at="2023-10-04T12:10:06 EDT" finished-at="2023-10-04T12:11:08 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4G-average]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Application]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void tests.PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_page_load_time -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.PageLoadTimeTest@27a5f880]" name="tearDown" is-config="true" duration-ms="27823" started-at="2023-10-04T12:11:08 EDT" finished-at="2023-10-04T12:11:35 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login_page_load_time status=SUCCESS method=PageLoadTimeTest.login_page_load_time(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:tests.PageLoadTimeTest@27a5f880] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.PageLoadTimeTest -->
+    </test> <!-- Test_Page_Load_Time_05 -->
+  </suite> <!-- Test Automation -->
+</testng-results>

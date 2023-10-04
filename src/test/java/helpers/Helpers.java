@@ -63,8 +63,8 @@ public class Helpers {
     // networkProfile / cpuAvg / cpuMax / memAvg / memMax / batteryAvg / batteryMax / duration / speedIndex
     public String getPropertyFromPerformanceTransactionAPI(String transactionId, String property) throws UnirestException {
         HttpResponse<String> response = Unirest.get(new PropertiesReader().getProperty("urlForAPIs") + "/reporter/api/transactions/" + transactionId)
-                .header("Authorization", "Bearer " + System.getenv("ACCESS_KEY"))
-//                .header("Authorization", "Bearer " + new PropertiesReader().getProperty("accessKey"))
+//                .header("Authorization", "Bearer " + System.getenv("ACCESS_KEY"))
+                .header("Authorization", "Bearer " + new PropertiesReader().getProperty("accessKey"))
                 .asString();
 
         String responseBody = response.getBody();
@@ -118,8 +118,7 @@ public class Helpers {
         return metrics;
     }
 
-    // Due to a bug, the code logic is written to download the file, rename it to .zip, and then extract the file to .json
-    // Normally the API should download a .json file directly, but waiting on Bug Fix (March 14, 2023 as of writing)
+    // This method is used to download HAR file from individual Performance Transactions
     public File downloadHARFileFromPerformanceTransaction(String transactionId, String fileName) throws IOException, URISyntaxException {
 
         // Calls API to get HAR file
@@ -138,31 +137,7 @@ public class Helpers {
         response.getEntity().writeTo(outputStream);
         outputStream.close();
 
-        // File is renamed to .zip (Due to bug, read above description)
-        File zipFile = new File(System.getProperty("user.dir") + "/har_files/" + fileName + ".zip");
-        harFile.renameTo(zipFile);
-
-        File outputFile = null;
-
-        // Extracting .zip into .json file and deleting .zip file
-        try (FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/har_files/" + fileName + ".zip");
-             ZipInputStream zis = new ZipInputStream(fis)) {
-            ZipEntry entry = zis.getNextEntry();
-            if (entry != null) {
-//                String jsonFileName = entry.getName();
-                outputFile = new File(System.getProperty("user.dir") + "/har_files/", fileName + ".json");
-                System.out.println(outputFile);
-                try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(outputFile))) {
-                    byte[] buffer = new byte[1024];
-                    int len;
-                    while ((len = zis.read(buffer)) > 0) {
-                        bos.write(buffer, 0, len);
-                    }
-                }
-            }
-        }
-        zipFile.delete();
-        return outputFile;
+        return harFile;
     }
 
     public void setReportStatus(String status, String message) {
