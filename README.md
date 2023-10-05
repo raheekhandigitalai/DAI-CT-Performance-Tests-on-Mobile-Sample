@@ -54,4 +54,4 @@ Apart from viewing the individual Performance Transactions report one by one, we
 
 Performance Transactions running across 5 Devices in parallel:
 
-![img.png](images/ParallelExecution.png)
+![](images/ParallelExecution.png)
