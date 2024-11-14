@@ -7,7 +7,7 @@
         <parameter name="nvProfile" value="4G-average" />
         <parameter name="captureLevel" value="Device" /> <!--Accepted Values: 'Device' or 'Application' -->
 
-        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE'" />
+        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE' and @region='US2'" />
 
         <classes>
             <class name="tests.PageLoadTimeTest"/>
@@ -19,7 +19,7 @@
         <parameter name="nvProfile" value="4G-average" />
         <parameter name="captureLevel" value="Device" />
 
-        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE'" />
+        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE' and @region='US2'" />
 
         <classes>
             <class name="tests.PageLoadTimeTest"/>
@@ -31,7 +31,7 @@
         <parameter name="nvProfile" value="4G-average" />
         <parameter name="captureLevel" value="Device" />
 
-        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE'" />
+        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE' and @region='US2'" />
 
         <classes>
             <class name="tests.PageLoadTimeTest"/>
@@ -43,7 +43,7 @@
         <parameter name="nvProfile" value="4G-average" />
         <parameter name="captureLevel" value="Device" />
 
-        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE'" />
+        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE' and @region='US2'" />
 
         <classes>
             <class name="tests.PageLoadTimeTest"/>
@@ -55,7 +55,67 @@
         <parameter name="nvProfile" value="4G-average" />
         <parameter name="captureLevel" value="Device" />
 
-          <parameter name="deviceQuery" value="@os='ios' and @category='PHONE'" />
+          <parameter name="deviceQuery" value="@os='ios' and @category='PHONE' and @region='US2'" />
+
+        <classes>
+            <class name="tests.PageLoadTimeTest"/>
+        </classes>
+    </test>
+
+    <test name="Test_Page_Load_Time_06">
+
+        <parameter name="nvProfile" value="4G-average" />
+        <parameter name="captureLevel" value="Device" /> <!--Accepted Values: 'Device' or 'Application' -->
+
+        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE' and @region='US2'" />
+
+        <classes>
+            <class name="tests.PageLoadTimeTest"/>
+        </classes>
+    </test>
+
+    <test name="Test_Page_Load_Time_07">
+
+        <parameter name="nvProfile" value="4G-average" />
+        <parameter name="captureLevel" value="Device" />
+
+        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE' and @region='US2'" />
+
+        <classes>
+            <class name="tests.PageLoadTimeTest"/>
+        </classes>
+    </test>
+
+    <test name="Test_Page_Load_Time_08">
+
+        <parameter name="nvProfile" value="4G-average" />
+        <parameter name="captureLevel" value="Device" />
+
+        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE' and @region='US2'" />
+
+        <classes>
+            <class name="tests.PageLoadTimeTest"/>
+        </classes>
+    </test>
+
+    <test name="Test_Page_Load_Time_09">
+
+        <parameter name="nvProfile" value="4G-average" />
+        <parameter name="captureLevel" value="Device" />
+
+        <parameter name="deviceQuery" value="@os='ios' and @category='PHONE' and @region='US2'" />
+
+        <classes>
+            <class name="tests.PageLoadTimeTest"/>
+        </classes>
+    </test>
+
+    <test name="Test_Page_Load_Time_10">
+
+        <parameter name="nvProfile" value="4G-average" />
+        <parameter name="captureLevel" value="Device" />
+
+          <parameter name="deviceQuery" value="@os='ios' and @category='PHONE' and @region='US2'" />
 
         <classes>
             <class name="tests.PageLoadTimeTest"/>
